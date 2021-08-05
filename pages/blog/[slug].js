@@ -259,8 +259,8 @@ export const getStaticPaths = async () => {
   }));
 
   return {
-    paths: [...devtoPaths, ...localPaths]
-    // fallback: true
+    paths: [...devtoPaths, ...localPaths],
+    fallback: false
   };
 };
 
