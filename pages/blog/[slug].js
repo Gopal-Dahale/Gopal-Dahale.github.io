@@ -18,10 +18,10 @@ import prism from 'remark-prism';
 import { getTagColor } from '../../components/ui/theme';
 import dayjs from 'dayjs';
 import localizedFormat from 'dayjs/plugin/localizedFormat';
-import PageLayout from 'components/layout/pageLayout';
-import { MotionImage } from 'components/ui/motion';
-import DevToCallToAction from 'components/layout/DevToCallToAction';
-import { fadeInUp, stagger } from 'components/ui/page-transitions';
+import PageLayout from '../../components/layout/pageLayout';
+import { MotionImage } from '../../components/ui/motion';
+import DevToCallToAction from '../../components/layout/DevToCallToAction';
+import { fadeInUp, stagger } from '../../components/ui/page-transitions';
 import { motion } from 'framer-motion';
 
 dayjs.extend(localizedFormat);
