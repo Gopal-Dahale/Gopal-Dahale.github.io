@@ -31,7 +31,7 @@ const MyStory = ({ companies, institutes }) => {
                   w={[6, 8]}
                   h={[6, 8]}
                   objectFit="cover"
-                  fallbackSrc={'/assets/images/placeholder.png'}
+                  // fallbackSrc={'/assets/images/placeholder.png'}
                   src={company.logo}
                   alt={company.alt}
                 />
@@ -57,7 +57,7 @@ const MyStory = ({ companies, institutes }) => {
                     w={[6, 8]}
                     h={[6, 8]}
                     objectFit="cover"
-                    fallbackSrc={'/assets/images/placeholder.png'}
+                    // fallbackSrc={'/assets/images/placeholder.png'}
                     src={institute.logo}
                     alt={institute.alt}
                   />

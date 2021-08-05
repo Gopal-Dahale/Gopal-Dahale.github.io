@@ -28,7 +28,7 @@ const LazyImage = (props) => {
             size={size}
             layout={layout}
             rounded={rounded}
-            fallbackSrc={placeholder}
+            // fallbackSrc={placeholder}
           />
         );
       }}
