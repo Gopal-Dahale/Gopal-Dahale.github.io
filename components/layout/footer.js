@@ -27,7 +27,7 @@ const Footer = () => {
         w="100%">
         {/* <HStack> */}
         <Text textAlign="center" fontSize="sm" color={useColorModeValue('gray.500', 'gray.200')}>
-          © {new Date().getFullYear()} Muhammad Ahmad{' '}
+          © {new Date().getFullYear()} Gopal Dahale{' '}
         </Text>
         {/* <Box fontSize="md" textAlign="left">
         Website built with
@@ -47,7 +47,7 @@ const Footer = () => {
         in Pakistan{"  "}🇵🇰
       </Box> */}
         {/* </HStack> */}
-        <Box textAlign="center">
+        {/* <Box textAlign="center">
           {siteConfig.author.accounts.map((sc, index) => (
             <IconButton
               key={index}
@@ -61,7 +61,7 @@ const Footer = () => {
               {...iconProps}
             />
           ))}
-        </Box>
+        </Box> */}
       </Flex>
     </Stack>
   );

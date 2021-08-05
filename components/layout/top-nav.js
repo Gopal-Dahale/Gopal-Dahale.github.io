@@ -111,12 +111,20 @@ export default function TopNav() {
             </Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
               {webLinks.map((link, index) => (
-                <NavLink key={index} name={link.name} path={link.path} onClose={onClose} />
+                // <NavLink di key={index} name={link.name} path={link.path} onClose={onClose} />
+                <NavLink
+                  di
+                  key={index}
+                  name={link.name}
+                  path="http://google.co.in/"
+                  onClose={onClose}
+                />
               ))}
               <Menu isLazy>
                 {({ isOpen, onClose }) => (
                   <>
                     <MenuButton
+                      disabled
                       as={Button}
                       variant="ghost"
                       size="sm"
@@ -191,11 +199,18 @@ export default function TopNav() {
             display={['inherit', 'inherit', 'none']}>
             <Stack as={'nav'} spacing={4}>
               {mobileLinks.map((link, index) => (
+                // <NavLink
+                //   key={index}
+                //   index={index}
+                //   name={link.name}
+                //   path={link.path}
+                //   onClose={onClose}
+                // />
                 <NavLink
                   key={index}
                   index={index}
                   name={link.name}
-                  path={link.path}
+                  path="http://www.google.co.in/"
                   onClose={onClose}
                 />
               ))}
