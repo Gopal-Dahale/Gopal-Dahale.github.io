@@ -38,11 +38,7 @@ const Home = ({ projects }) => {
           }}
           m="auto"
           mb={[16, 16, 'auto']}>
-          <Avatar
-            size={'2xl'}
-            // src={UserIcon}
-            src={'https://avatars2.githubusercontent.com/u/37842853?v=4'}
-          />
+          <Avatar size={'2xl'} src={'https://avatars2.githubusercontent.com/u/37842853?v=4'} />
         </MotionBox>
         <MotionFlex
           ml={['auto', 'auto', 16]}
@@ -64,28 +60,28 @@ const Home = ({ projects }) => {
             }
           }}>
           <Header underlineColor={ORANGE} emoji="👋" mt={0}>
-            Hey!
+            Hello!
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-            My name is{' '}
+            I'm{' '}
             <Box as="strong" fontWeight="600">
-              Ahmad
+              Gopal,
             </Box>{' '}
-            and I&apos;m a{' '}
+            &apos;m a student who enjoys making Full Stack projects with{' '}
             <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer and
+              a blend of Machine Learning 🚀. I'm focused on developing stuff that
             </Box>{' '}
             <Box as="span" whiteSpace="nowrap">
-              an open source lover&nbsp;
+              that can influence people, and I'm constantly seeking work &nbsp;
             </Box>
-            from{' '}
             <Box as="span" whiteSpace="nowrap">
-              Pakistan 🇵🇰
+              opportunities with tech companies on such projects 👨‍💻.
             </Box>
+            <Box as="span" whiteSpace="nowrap"></Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my digital garden, where I write about the things I&apos;m working on and share
-            what I&apos;ve learned. 😊
+            This place is my online backyard 🏡, where I share what I've learnt and the projects I
+            made. 😃
           </Box>
         </MotionFlex>
       </Flex>
@@ -131,23 +127,36 @@ const Home = ({ projects }) => {
                 </NextLink>
               </ListItem>
               <ListItem>
-                <NextLink href={'/developer-story'} passHref>
-                  <Link>Story page</Link>
+                <NextLink href={'/about'} passHref>
+                  <Link>Work Experience</Link>
                 </NextLink>
               </ListItem>
               <ListItem>
-                <NextLink href={'/tech-stack'} passHref>
-                  <Link>Tech Stack</Link>
+                <NextLink href="https://www.codechef.com/users/gopald27" passHref>
+                  <Link>Codechef</Link>
                 </NextLink>
+                ,&nbsp;
+                <NextLink href="https://www.hackerrank.com/dahalegopal27" passHref>
+                  <Link>Hackerrank</Link>
+                </NextLink>
+                &nbsp;and&nbsp;
+                <NextLink href="https://leetcode.com/dahalegopal27/" passHref>
+                  <Link>LeetCode</Link>
+                </NextLink>
+                &nbsp;Profile
               </ListItem>
               <ListItem>
-                <NextLink href={'/achievements'} passHref>
-                  <Link>Achievements</Link>
+                <NextLink href={'https://jovian.ai/dahalegopal27'} passHref>
+                  <Link>Jovian</Link>
                 </NextLink>
+                &nbsp;and&nbsp;
+                <NextLink href={'https://www.kaggle.com/gopalrameshdahale'} passHref>
+                  <Link>Kaggle</Link>
+                </NextLink>
+                &nbsp;Profile
               </ListItem>
             </UnorderedList>
           </Stack>
-          <Projects projects={projects} />
         </Box>
       </MotionBox>
     </Flex>
