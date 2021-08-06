@@ -1,51 +1,46 @@
-import {
-  FaGithub,
-  FaDev,
-  FaLinkedin,
-  FaQuora,
-  FaTwitter
-} from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+import { FaGithub, FaLinkedin, FaQuora } from 'react-icons/fa';
+import { SiCodechef, SiHackerrank, SiLeetcode } from 'react-icons/si';
+import { FiMail } from 'react-icons/fi';
 
 const siteConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} Muhammad Ahmad. All Rights Reserved.`,
   author: {
-    name: "Muhammad Ahmad",
+    name: 'Muhammad Ahmad',
     accounts: [
       {
-        url: "https://github.com/MA-Ahmad",
-        label: "Github Account",
-        type: "gray",
+        url: 'https://github.com/Gopal-Dahale/',
+        label: 'Github Account',
+        type: 'gray',
         icon: <FaGithub />
       },
       {
-        url: "https://twitter.com/muhammad_ahmaad",
-        label: "Twitter Account",
-        type: "twitter",
-        icon: <FaTwitter />
-      },
-      {
-        url: "https://dev.to/m_ahmad",
-        label: "Dev Account",
-        type: "gray",
-        icon: <FaDev />
-      },
-      {
-        url: "https://linkedin.com/in/muhammad-ahmad20",
-        label: "LinkedIn Account",
-        type: "linkedin",
+        url: 'https://linkedin.com/in/muhammad-ahmad20',
+        label: 'LinkedIn Account',
+        type: 'linkedin',
         icon: <FaLinkedin />
       },
       {
-        url: "https://www.quora.com/profile/Muhammad-Ahmad-66",
-        label: "Quora Account",
-        type: "red",
-        icon: <FaQuora />
+        url: 'https://www.codechef.com/users/gopald27',
+        label: 'Codechef Profile',
+        type: 'gray',
+        icon: <SiCodechef />
       },
       {
-        url: "mailto:muhammad.ahmad8043@gmail.com",
-        label: "Mail ahmad",
-        type: "gray",
+        url: 'https://www.hackerrank.com/dahalegopal27',
+        label: 'Hackerrank Profile',
+        type: 'green',
+        icon: <SiHackerrank />
+      },
+      {
+        url: 'https://leetcode.com/dahalegopal27/',
+        label: 'LeetCode Profile',
+        type: 'orange',
+        icon: <SiLeetcode />
+      },
+      {
+        url: 'mailto:dahalegopal27@gmail.com',
+        label: 'Gopal Dahale',
+        type: 'gray',
         icon: <FiMail />
       }
     ]

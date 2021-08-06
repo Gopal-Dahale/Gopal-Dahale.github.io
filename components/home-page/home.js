@@ -132,18 +132,11 @@ const Home = ({ projects }) => {
                 </NextLink>
               </ListItem>
               <ListItem>
-                <NextLink href="https://www.codechef.com/users/gopald27" passHref>
-                  <Link>Codechef</Link>
+                <NextLink
+                  href="https://drive.google.com/file/d/1vfSivLbATuVK2lxbczEts8hRcBIrafWO/view?usp=sharing"
+                  passHref>
+                  <Link>Resume</Link>
                 </NextLink>
-                ,&nbsp;
-                <NextLink href="https://www.hackerrank.com/dahalegopal27" passHref>
-                  <Link>Hackerrank</Link>
-                </NextLink>
-                &nbsp;and&nbsp;
-                <NextLink href="https://leetcode.com/dahalegopal27/" passHref>
-                  <Link>LeetCode</Link>
-                </NextLink>
-                &nbsp;Profile
               </ListItem>
               <ListItem>
                 <NextLink href={'https://jovian.ai/dahalegopal27'} passHref>
