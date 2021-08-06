@@ -47,7 +47,7 @@ const Footer = () => {
         in Pakistan{"  "}🇵🇰
       </Box> */}
         {/* </HStack> */}
-        {/* <Box textAlign="center">
+        <Box textAlign="center">
           {siteConfig.author.accounts.map((sc, index) => (
             <IconButton
               key={index}
@@ -61,7 +61,7 @@ const Footer = () => {
               {...iconProps}
             />
           ))}
-        </Box> */}
+        </Box>
       </Flex>
     </Stack>
   );
