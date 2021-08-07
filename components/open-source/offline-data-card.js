@@ -5,6 +5,7 @@ import {
   useColorModeValue,
   VStack,
   Text,
+  Stack,
   AspectRatio,
   HStack,
   Tag,
@@ -12,31 +13,44 @@ import {
   useDisclosure,
   Modal,
   ModalOverlay,
+  Skeleton,
   ModalContent,
   ModalBody,
   Center,
   Flex,
   Tooltip
 } from '@chakra-ui/react';
+import { useState } from 'react';
 import { MotionBox } from '../ui/motion';
 import { getTagColor } from '../ui/theme';
-import { AiOutlineStar, AiOutlineShareAlt } from 'react-icons/ai';
+import useFetch from 'use-http';
+import { BiGitRepoForked, BiStar } from 'react-icons/bi';
 import { FiGithub } from 'react-icons/fi';
+import { VscRocket } from 'react-icons/vsc';
 import { CardTransition } from '../ui/page-transitions';
 import LazyImage from '../ui/lazy-image';
 
 const RepositoryCard = (props) => {
-  const { key, title, description, cover, blurHash, technologies, url, live, stars, fork } = props;
+  const { title, cover, blurHash, technologies, url, live } = props;
+  const { get } = useFetch('https://api.github.com');
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [loadingState, setLoadingState] = useState(false);
+  const [description, setDescription] = useState(null);
+  const [stars, setStars] = useState(null);
+  const [forks, setForks] = useState(null);
 
   const handleClick = () => {
     onOpen();
-    // window.open(link);
-    // if (type == "link" || type == "article") {
-    //   window.open(link);
-    // } else {
-    //   onOpen();
-    // }
+    setLoadingState(true);
+    get(`/repos${url.split('github.com')[1]}`).then((res) => {
+      if (res) {
+        setDescription(res.description);
+        setStars(res.stargazers_count);
+        setForks(res.forks_count);
+      }
+      setLoadingState(false);
+    });
   };
 
   const handleLinkClick = (e, link) => {
@@ -64,7 +78,6 @@ const RepositoryCard = (props) => {
     <CardTransition>
       <Box onClick={handleClick} cursor="pointer" size="xl">
         <VStack
-          //   w="100%"
           rounded="xl"
           borderWidth="1px"
           bg={useColorModeValue('white', 'gray.800')}
@@ -85,23 +98,16 @@ const RepositoryCard = (props) => {
                   w="100%"
                   borderBottomWidth="1px"
                   borderColor={useColorModeValue('gray.100', 'gray.700')}>
-                  {/* <Image
-                    src={cover}
-                    fallback={<Skeleton />}
-                    objectFit="cover"
-                  /> */}
                   <LazyImage src={cover} blurHash={blurHash} />
                 </AspectRatio>
               </MotionBox>
             </MotionBox>
           </Box>
-
           <VStack py={2} px={[2, 4]} spacing={1} align="start" w="100%">
             <Flex justifyContent={'space-between'} width="100%">
               <Tooltip hasArrow label="Github link" placement="top">
                 <HStack>
                   <Icon as={FiGithub} boxSize="0.9em" mt={'1px'} />
-                  {/* <Link href={url} isExternal> */}
                   <Text
                     fontSize="sm"
                     noOfLines={1}
@@ -112,13 +118,6 @@ const RepositoryCard = (props) => {
                   </Text>
                 </HStack>
               </Tooltip>
-              {/* </Link> */}
-              <Flex>
-                <Icon as={AiOutlineStar} boxSize="0.9em" mt={'1px'} />
-                <Box as="span" ml="1" fontSize="sm">
-                  {stars}
-                </Box>
-              </Flex>
             </Flex>
             <Flex justifyContent={'space-between'} width="100%">
               <Box>
@@ -131,37 +130,102 @@ const RepositoryCard = (props) => {
                 </HStack>
               </Box>
             </Flex>
-            {/* <Flex justifyContent={"space-between"} width="100%">
-              <Flex>
-                <AiOutlineStar color="teal.300" />
-                <Box as="span" ml="1" fontSize="sm">
-                  {stars}
-                </Box>
-              </Flex>
-              <Box >
-              <Text
-                fontSize="xs"
-                fontWeight="400"
-                color={useColorModeValue("gray.400", "gray.500")}
-              >
-                {created}
-              </Text>
-            </Box>
-            </Flex> */}
           </VStack>
         </VStack>
         <Modal isOpen={isOpen} onClose={onClose} isCentered allowPinchZoom>
           <ModalOverlay />
           <ModalContent bg="none" maxW={'28rem'} w="auto">
             <ModalBody p={0} rounded="lg" overflow="hidden" bg="none">
-              <Center>
-                <Image src={cover} rounded="lg" />
-                {/* {type == "image" ? (
-                <Image src={cover} rounded="lg" />
-              ) : (
-                <ReactPlayer url={link} controls playing />
-              )} */}
-              </Center>
+              <Box bg={useColorModeValue('white', 'gray.900')}>
+                <Image src={cover} />
+              </Box>
+              <VStack
+                py={2}
+                px={[2, 4]}
+                spacing={1}
+                align="start"
+                w="100%"
+                bg={useColorModeValue('white', 'gray.900')}>
+                <Flex justifyContent={'space-between'} width="100%">
+                  <Tooltip hasArrow label="Github link" placement="top">
+                    <HStack>
+                      <Icon as={FiGithub} boxSize="0.9em" mt={'1px'} />
+                      <Text
+                        fontSize="sm"
+                        noOfLines={1}
+                        fontWeight="600"
+                        align="left"
+                        onClick={(e) => handleLinkClick(e, url)}>
+                        {title}
+                      </Text>
+                    </HStack>
+                  </Tooltip>
+
+                  {loadingState ? (
+                    <Box>
+                      <Skeleton height="30px" width="60px" />
+                    </Box>
+                  ) : (
+                    <HStack cursor={'pointer'}>
+                      {forks && (
+                        <Box
+                          _hover={{ color: 'blue.500' }}
+                          onClick={(e) => handleLinkClick(e, url)}>
+                          <Icon as={BiGitRepoForked} boxSize="0.9em" mt={'1px'} />
+                          <Box as="span" ml="1" fontSize="sm">
+                            {forks}
+                          </Box>
+                        </Box>
+                      )}
+                      {stars && (
+                        <Box
+                          _hover={{ color: 'blue.500' }}
+                          onClick={(e) => handleLinkClick(e, url)}>
+                          <Icon as={BiStar} boxSize="0.9em" mt={'1px'} />
+                          <Box as="span" ml="1" fontSize="sm">
+                            {stars}
+                          </Box>
+                        </Box>
+                      )}
+                      {live && (
+                        <Tooltip hasArrow label="View Deployment" placement="top">
+                          <Box
+                            _hover={{ color: 'blue.500' }}
+                            onClick={(e) => handleLinkClick(e, live)}>
+                            <Icon as={VscRocket} boxSize="0.9em" mt={'1px'} />
+                          </Box>
+                        </Tooltip>
+                      )}
+                    </HStack>
+                  )}
+                </Flex>
+                <Flex justifyContent={'space-between'} width="100%">
+                  <Box>
+                    <HStack spacing="1">
+                      {technologies.map((tech, index) => (
+                        <Tag key={index} size="sm" colorScheme={getTagColor(tech)}>
+                          <Text fontSize={['0.55rem', 'inherit', 'inherit']}>{tech}</Text>
+                        </Tag>
+                      ))}
+                    </HStack>
+                  </Box>
+                </Flex>
+                <Box width="100%" py={2}>
+                  {loadingState ? (
+                    <>
+                      <Skeleton height="16px" width="100%" />
+                      <Stack spacing={2} mt={1} isInline alignItems="center">
+                        <Skeleton height="16px" width="100%" />
+                      </Stack>
+                      <Stack spacing={2} mt={1} isInline alignItems="center">
+                        <Skeleton height="16px" width="80%" />
+                      </Stack>
+                    </>
+                  ) : (
+                    <Text fontSize="sm">{description ?? ''}</Text>
+                  )}
+                </Box>
+              </VStack>
             </ModalBody>
           </ModalContent>
         </Modal>

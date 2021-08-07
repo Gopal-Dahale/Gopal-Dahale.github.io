@@ -18,7 +18,7 @@ import NextLink from 'next/link';
 const webLinks = [
   { name: 'About', path: '/about' },
   { name: 'Tech Stack', path: '/tech-stack' },
-  { name: 'Open Source', path: '/open-source' },
+  { name: 'Projects', path: '/open-source' },
   { name: 'Achievements', path: '/achievements' }
 ];
 

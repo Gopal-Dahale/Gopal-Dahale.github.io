@@ -1,144 +1,96 @@
 export const repositories = [
   {
-    title: 'Portfolio1',
-    description: 'Personal portfolio app to show my skills and experience.',
-    cover: '../public/assets/images/repositories/portfolio-v2.png',
-    technologies: ['react', 'chakraUi'],
-    url: 'https://github.com/MA-Ahmad/portfolio-v2',
-    live: 'https://ma-ahmad.github.io/portfolio-v2',
-    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{',
-    stars: '31',
-    fork: '6'
+    title: 'Distribution & Requirement of Medical Resources for COVID',
+    cover: 'assets/images/repositories/covid_project.png',
+    technologies: ['Python', 'Jupyter'],
+    url: 'https://github.com/Gopal-Dahale/Distribution-and-Requirement-of-Medical-Resources-for-Covid-19-and-Factors-Affecting-Hospitalization',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
-    title: 'Dev.to clone',
-    description: 'This portfolio built by using Next.js, ChakraUi and Typescript.',
-    cover: '../public/assets/images/repositories/devto.png',
-    technologies: ['Nextjs', 'chakraUi'],
-    url: 'https://github.com/MA-Ahmad/dev.to-clone',
-    live: 'https://dev-to-clone-ma.vercel.app',
-    blurHash: 'LMOWg4wIS$WBH?sAkCR*?^bcnNoy',
-    stars: '29'
+    title: 'Auto Playlist Creation',
+    cover: 'assets/images/repositories/auto_playlist_creation.png',
+    technologies: ['Python', 'Jupyter'],
+    url: 'https://github.com/Gopal-Dahale/Automatic-Playlist-creation',
+    blurHash: 'LMOWg4wIS$WBH?sAkCR*?^bcnNoy'
   },
   {
-    title: 'Portfolio2',
-    description: 'Portfolio app to show my skills and experience.',
-    cover: '../public/assets/images/repositories/portfolio-v2.png',
-    technologies: ['Nextjs', 'react', 'chakraUi'],
-    url: 'https://github.com/MA-Ahmad/myPortfolio',
-    live: 'https://my-portfolio-ma-ahmad.vercel.app',
-    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{',
-    stars: '22',
-    fork: '4'
+    title: 'Digit Recognition Visualiser',
+    cover: 'assets/images/repositories/digit.png',
+    technologies: ['Python', 'Jupyter', 'Heroku'],
+    url: 'https://github.com/Gopal-Dahale/Digit-recognition-visualiser-NN',
+    live: 'https://digit-recognition-visualizer.herokuapp.com/',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
-    title: 'Notebook',
-    description: 'This is a notebook app which will help you to crate notes for your daily work.',
-    cover: '../public/assets/images/repositories/notebook_app.png',
-    technologies: ['react', 'typescript', 'chakraUI'],
-    url: 'https://github.com/MA-Ahmad/notebook',
-    live: 'https://ma-ahmad.github.io/notebook',
-    blurHash: 'L4S~x5xb~q$*~WR6MykCx^Vt4TtP',
-    stars: '15',
-    fork: '4'
+    title: 'Present Cipher',
+    cover: 'assets/images/repositories/present.png',
+    technologies: ['Python'],
+    url: 'https://github.com/Gopal-Dahale/Present-Cipher',
+    blurHash: 'L15#hiax00og^Uf65Nj]oPfkWRf6'
   },
   {
-    title: 'Portfolio3',
-    description: 'Personal portfolio app to show my skills and experience.',
-    cover: '../public/assets/images/repositories/portfolio.png',
-    technologies: ['react', 'chakraUi'],
-    url: 'https://github.com/MA-Ahmad/portfolio',
-    live: 'https://mahmad.me/',
-    blurHash: 'L35O{d~XeoMyDhRPxv%Ms=xunmRQ',
-    stars: '11'
+    title: 'COVID India Tracker',
+    cover: 'assets/images/repositories/tracker.png',
+    technologies: ['Kotlin', 'Javascript'],
+    url: 'https://github.com/Gopal-Dahale/COVID19-India-Tracker',
+    blurHash: 'L4S~x5xb~q$*~WR6MykCx^Vt4TtP'
   },
   {
-    title: 'Card portfolio',
-    description: 'A portfolio template.',
-    cover: '../public/assets/images/repositories/cardportfolio.jpeg',
-    technologies: ['react', 'typescript', 'chakraUI'],
-    url: 'https://github.com/MA-Ahmad/card-portfolio',
-    live: 'https://ma-ahmad.github.io/card-portfolio',
-    blurHash: 'L15#hiax00og^Uf65Nj]oPfkWRf6',
-    stars: '9'
-  },
-
-  {
-    title: 'Blog App',
-    description: 'A React Blog App built by using libraries like ChakraUI, Formik.',
-    technologies: ['react', 'chakraUi', 'formik'],
-    cover: '../public/assets/images/repositories/blog_1.png',
-    url: 'https://github.com/MA-Ahmad/reactBlog',
-    live: 'https://ma-ahmad.github.io/reactBlog',
-    blurHash: 'LMMaw^IV~pxu00%LRjNGAIIVadt6',
-    stars: '9',
-    fork: '1'
-  },
-  {
-    title: 'Blog App (front-end)',
-    description: 'React frontend of a blog app with rails on backend.',
-    cover: '../public/assets/images/repositories/blog_2.png',
-    technologies: ['react', 'rails', 'chakraUi'],
-    url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
-    live: 'https://blog-frontend-react.herokuapp.com',
-    blurHash: 'LSN1AcH?~Wtl00={M{NG0eIoj]xa',
-    stars: '6'
-  },
-  {
-    title: 'Rails template',
-    description: 'A rails app template built with tailwindcss.',
-    cover: '../public/assets/images/repositories/quickstart.jpeg',
-    technologies: ['rails', 'tailwindCss'],
-    url: 'https://github.com/MA-Ahmad/quickstart-rails-tailwind',
-    live: 'https://quickstart-rails-tailwind.herokuapp.com',
-    blurHash: 'LLPGmg?wRPS~D%D%ozxa00?G-;R%',
-    stars: '6'
-  },
-  {
-    title: 'Image Gallery',
-    description:
-      'Simple gallery with images from the pixabay API. Tailwind css is built into workflow with postcss and autoprefixer.',
-    cover: '../public/assets/images/repositories/image_gallery.png',
-    technologies: ['react', 'tailwindCss'],
-    url: 'https://github.com/MA-Ahmad/react-image-gallery',
-    blurHash: 'LMOWg4wIS$WBH?sAkCR*?^bcnNoy',
-    stars: '2'
-  },
-  {
-    title: 'Blogify',
-    description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
-    cover: '../public/assets/images/repositories/blog_3.png',
-    technologies: ['rails', 'tailwindCss'],
-    url: 'https://github.com/MA-Ahmad/react_rails_blog',
-    live: 'https://react-on-rails-blog.herokuapp.com',
-    blurHash: 'L6O;6=00M|og00_4_4s:E9-oxVoL',
-    stars: '2'
+    title: 'Load Flow Analysis',
+    cover: 'assets/images/repositories/load_flow.png',
+    technologies: ['C++'],
+    url: 'https://github.com/Gopal-Dahale/Load-flow-analysis',
+    blurHash: 'L35O{d~XeoMyDhRPxv%Ms=xunmRQ'
   }
-
   // {
-  //   title: "Video-to-text",
-  //   description: "Convert a video to text using ruby.",
-  //   cover: "",
-  //   technologies: ["ruby"],
-  //   url: "https://github.com/MA-Ahmad/Video-to-text",
-  //   blurHash: "L4S~x5xb~q$*~WR6MykCx^Vt4TtP",
-  //   stars: "1"
-  // }
-  // {
-  //   title: "Authentication API",
-  //   description:
-  //     "Simple Authentication API that can be used with any front-end app like React, Vue, Angular app.",
-  //   technologies: ["ruby", "rails"],
-  //   url: "https://github.com/MA-Ahmad/rails-authentication-app",
-  //   blurHash: "L4S~x5xb~q$*~WR6MykCx^Vt4TtP",
-  //   stars: "1"
+  //   title: 'Blog App',
+  //   description: 'A React Blog App built by using libraries like ChakraUI, Formik.',
+  //   technologies: ['react', 'chakraUi', 'formik'],
+  //   cover: 'assets/images/repositories/blog_1.png',
+  //   url: 'https://github.com/MA-Ahmad/reactBlog',
+  //   live: 'https://ma-ahmad.github.io/reactBlog',
+  //   blurHash: 'LMMaw^IV~pxu00%LRjNGAIIVadt6',
+  //   stars: '9',
+  //   fork: '1'
   // },
   // {
-  //   title: "Blog App (back-end)",
-  //   description: "Rails backend api for blog app with react on frontend.",
-  //   technologies: ["ruby", "rails"],
-  //   url: "https://github.com/MA-Ahmad/blog-app-rails-backend",
-  //   blurHash: "L4S~x5xb~q$*~WR6MykCx^Vt4TtP",
-  //   stars: "2"
+  //   title: 'Blog App (front-end)',
+  //   description: 'React frontend of a blog app with rails on backend.',
+  //   cover: 'assets/images/repositories/blog_2.png',
+  //   technologies: ['react', 'rails', 'chakraUi'],
+  //   url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
+  //   live: 'https://blog-frontend-react.herokuapp.com',
+  //   blurHash: 'LSN1AcH?~Wtl00={M{NG0eIoj]xa',
+  //   stars: '6'
+  // },
+  // {
+  //   title: 'Rails template',
+  //   description: 'A rails app template built with tailwindcss.',
+  //   cover: 'assets/images/repositories/quickstart.jpeg',
+  //   technologies: ['rails', 'tailwindCss'],
+  //   url: 'https://github.com/MA-Ahmad/quickstart-rails-tailwind',
+  //   live: 'https://quickstart-rails-tailwind.herokuapp.com',
+  //   blurHash: 'LLPGmg?wRPS~D%D%ozxa00?G-;R%',
+  //   stars: '6'
+  // },
+  // {
+  //   title: 'Image Gallery',
+  //   description:
+  //     'Simple gallery with images from the pixabay API. Tailwind css is built into workflow with postcss and autoprefixer.',
+  //   cover: 'assets/images/repositories/image_gallery.png',
+  //   technologies: ['react', 'tailwindCss'],
+  //   url: 'https://github.com/MA-Ahmad/react-image-gallery',
+  //   blurHash: 'LMOWg4wIS$WBH?sAkCR*?^bcnNoy',
+  //   stars: '2'
+  // },
+  // {
+  //   title: 'Blogify',
+  //   description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
+  //   cover: 'assets/images/repositories/blog_3.png',
+  //   technologies: ['rails', 'tailwindCss'],
+  //   url: 'https://github.com/MA-Ahmad/react_rails_blog',
+  //   live: 'https://react-on-rails-blog.herokuapp.com',
+  //   blurHash: 'L6O;6=00M|og00_4_4s:E9-oxVoL',
+  //   stars: '2'
   // }
 ];
