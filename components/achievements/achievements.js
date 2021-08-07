@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { FiPackage, FiHome, FiEdit2, FiUsers, FiBarChart2 } from 'react-icons/fi';
+import { SiQwiklabs, SiHackerrank, SiIbm, SiKotlin, SiCodechef } from 'react-icons/si';
+import { FaFreeCodeCamp } from 'react-icons/fa';
 import { VStack, Heading, Box, Link, LinkProps } from '@chakra-ui/react';
 import { TimelineItem } from './Timeline';
 import { PageSlideFade } from '../ui/page-transitions';
@@ -39,37 +41,14 @@ const Achievements = () => {
             2021
           </Heading>
           <Box>
-            <TimelineItem icon={FiUsers}>Became a dad ❤️</TimelineItem>
-            <TimelineItem icon={FiPackage}>
-              Published my first post on this website{' '}
-              <InternalLink color={'blue.200'} url="/blog" text={'Blog'} />
-            </TimelineItem>
-            <TimelineItem icon={FiPackage}>
-              Published or contributed to{' '}
-              <InternalLink
-                color={'blue.200'}
-                url="/open-source"
-                text={'9 open-source repositories'}
-              />
-            </TimelineItem>
-            <TimelineItem icon={FiBarChart2}>
-              Collected 6k+ post views and 350+ total reactions on{' '}
+            <TimelineItem icon={SiCodechef} skipTrail>
+              Earned 3 star rating on
               <ExternalLink
                 color={'blue.200'}
-                url="https://dev.to/m_ahmad"
-                text={'Dev.to'}
+                url="https://www.codechef.com/users/gopald27"
+                text=" CodeChef"
                 target="_blank"
               />
-            </TimelineItem>
-            <TimelineItem icon={FiHome} skipTrail>
-              Rebuilt my portfolio website with React, ChakraUI and Framer-motion,{' '}
-              <ExternalLink
-                color={'blue.200'}
-                url="https://github.com/MA-Ahmad/portfolio"
-                text={'source on Github'}
-                target="_blank"
-              />
-              .
             </TimelineItem>
           </Box>
         </Box>
@@ -78,34 +57,87 @@ const Achievements = () => {
             2020
           </Heading>
           <Box>
-            <TimelineItem icon={FiEdit2}>Wrote 5 blog posts</TimelineItem>
-            <TimelineItem icon={FiPackage}>
-              Published or contributed to{' '}
+            <TimelineItem icon={FiBarChart2} skipTrail>
+              Completed an online course Data Analysis with Python organised by
               <ExternalLink
                 color={'blue.200'}
-                url="https://github.com/MA-Ahmad?tab=repositories"
-                text={'32 open-source repositories'}
+                url="https://jovian.ai/dahalegopal27"
+                text=" Jovian.ai"
                 target="_blank"
               />
             </TimelineItem>
-            <TimelineItem icon={FiBarChart2}>
-              Collected 650+ post views and 15+ total reactions on{' '}
+            <TimelineItem icon={SiKotlin} skipTrail>
+              Participated in
               <ExternalLink
                 color={'blue.200'}
-                url="https://dev.to/m_ahmad"
-                text={'Dev.to'}
+                url="https://drive.google.com/file/d/1FGPYe8gs3-1bRX9CPSY-AxNC3qklIU8p/view"
+                text=" 30 days of Kotlin Campaign "
+                target="_blank"
+              />
+              organized by Google Developers.
+            </TimelineItem>
+            <TimelineItem icon={SiIbm} skipTrail>
+              Earned
+              <ExternalLink
+                color={'blue.200'}
+                url="https://www.credly.com/badges/db3418b1-9857-46bd-9663-4e5b68ac1552/linked_in"
+                text=" IBM Quantum Challenge "
+                target="_blank"
+              />
+              Badge
+            </TimelineItem>
+            <TimelineItem icon={SiHackerrank} skipTrail>
+              Secured 43 rank out of 1513 in
+              <ExternalLink
+                color={'blue.200'}
+                url="https://www.hackerrank.com/results/hack-the-interview-global/dahalegopal27"
+                text=" Hack the Interview - Global"
                 target="_blank"
               />
             </TimelineItem>
-            <TimelineItem icon={FiHome} skipTrail>
-              Built my portfolio website with React and ChakraUI,{' '}
+            <TimelineItem icon={FaFreeCodeCamp}>
+              Completed Responsive Web Design Developer Certification from
               <ExternalLink
                 color={'blue.200'}
-                url="https://github.com/MA-Ahmad/portfolio2"
-                text={'source on Github'}
+                url="https://www.freecodecamp.org/certification/fccdcf64cea-ae73-4db1-8f4b-2f30b4fa70bdg/responsive-web-design"
+                text=" freeCodeCamp"
                 target="_blank"
               />
-              .
+            </TimelineItem>
+            <TimelineItem icon={SiHackerrank} skipTrail>
+              Verified Skills and Badges on
+              <ExternalLink
+                color={'blue.200'}
+                url="https://www.hackerrank.com/dahalegopal27"
+                text=" HackerRank"
+                target="_blank"
+              />
+            </TimelineItem>
+          </Box>
+        </Box>
+        <Box>
+          <Heading fontSize="2xl" fontWeight="600" my={5}>
+            2019
+          </Heading>
+          <Box>
+            <TimelineItem icon={SiHackerrank}>
+              Earned 5 star badge in problem solving on
+              <ExternalLink
+                color={'blue.200'}
+                url="https://www.hackerrank.com/dahalegopal27"
+                text=" HackerRank"
+                target="_blank"
+              />
+            </TimelineItem>
+            <TimelineItem icon={SiQwiklabs} skipTrail>
+              Earned
+              <ExternalLink
+                color={'blue.200'}
+                url="https://google.qwiklabs.com/public_profiles/80cfcdb6-e310-48fe-b59b-662f3924c6fd"
+                text=" Qwiklabs Essential Badges "
+                target="_blank"
+              />
+              from Google Cloud Training
             </TimelineItem>
           </Box>
         </Box>
