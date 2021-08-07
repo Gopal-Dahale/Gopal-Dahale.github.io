@@ -7,6 +7,7 @@ import {
   Text,
   Tag,
   Image,
+  Link,
   useColorMode,
   useColorModeValue
 } from '@chakra-ui/react';
@@ -21,7 +22,7 @@ import PageLayout from '../components/layout/pageLayout';
 const TURQUOISE = '#06b6d4';
 
 const Card = (props) => {
-  const { title, role, skills, period, logo, colorMode, alt } = props;
+  const { title, role, skills, period, logo, link, colorMode, alt } = props;
   return (
     <CardTransition>
       <Box
@@ -34,15 +35,17 @@ const Card = (props) => {
         rounded="md">
         <Flex justifyContent="space-between">
           <Flex>
-            <Image
-              rounded="full"
-              w={16}
-              h={16}
-              objectFit="cover"
-              fallbackSrc="assets/images/placeholder.png"
-              src={logo}
-              alt={alt}
-            />
+            <a target="_blank" href={link}>
+              <Image
+                rounded="full"
+                w={16}
+                h={16}
+                objectFit="cover"
+                fallbackSrc="assets/images/placeholder.png"
+                src={logo}
+                alt={alt}
+              />
+            </a>
             <Stack spacing={2} pl={3} align="left">
               <Heading align="left" fontSize="xl" color={`mode.${colorMode}.career.text`}>
                 {title}
@@ -62,6 +65,12 @@ const Card = (props) => {
                   </Tag>
                 ))}
               </Stack>
+              <Stack
+                spacing={1}
+                mt={3}
+                isInline
+                alignItems="center"
+                display={['none', 'none', 'flex', 'flex']}></Stack>
             </Stack>
           </Flex>
           <Stack display={['none', 'none', 'flex', 'flex']}>
@@ -116,6 +125,7 @@ const About = ({ companies, institutes }) => {
                   skills={company.skills}
                   period={company.period}
                   logo={company.logo}
+                  link={company.link}
                   colorMode={colorMode}
                 />
               </MotionBox>
@@ -141,6 +151,7 @@ const About = ({ companies, institutes }) => {
                   skills={institute.skills}
                   period={institute.period}
                   logo={institute.logo}
+                  link={institute.link}
                   colorMode={colorMode}
                 />
               </MotionBox>

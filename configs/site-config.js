@@ -14,7 +14,7 @@ const siteConfig = {
         icon: <FaGithub />
       },
       {
-        url: 'https://linkedin.com/in/muhammad-ahmad20',
+        url: 'https://www.linkedin.com/in/gopal-ramesh-dahale-7a3087198/',
         label: 'LinkedIn Account',
         type: 'linkedin',
         icon: <FaLinkedin />
