@@ -81,25 +81,11 @@ export const institutes = [
 
 export const skillsArray = [
   {
-    name: 'Ruby on Rails',
-    description: 'Web development',
-    link: 'https://rubyonrails.org/',
-    type: 'development',
-    image: 'assets/images/skills/rails.png'
-  },
-  {
     name: 'React',
     description: 'Web development',
     link: 'https://reactjs.org/',
     type: 'development',
     image: 'assets/images/skills/react.png'
-  },
-  {
-    name: 'Ruby',
-    description: 'Web development, scrapping',
-    link: 'https://www.ruby-lang.org/en/',
-    type: 'development',
-    image: 'assets/images/skills/ruby.png'
   },
   {
     name: 'Python',
@@ -116,21 +102,78 @@ export const skillsArray = [
     image: 'assets/images/skills/javascript.png'
   },
   {
-    name: 'Typescript',
-    description: 'Web development',
-    link: 'https://www.typescriptlang.org/',
-    type: 'development',
-    image: 'assets/images/skills/typescript.png'
-  },
-  {
-    name: 'Html5',
+    name: 'HTML5',
     description: 'Web layouts',
     link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
     type: 'development',
     image: 'assets/images/skills/html-5.png'
   },
   {
-    name: 'Css3',
+    name: 'Heroku',
+    description: 'Deployment',
+    link: 'https://www.heroku.com/',
+    type: 'development',
+    image: 'assets/images/skills/heroku.png'
+  },
+  {
+    name: 'Visual Studio Code',
+    description: 'Code editor of choice',
+    link: 'https://code.visualstudio.com/',
+    type: 'development',
+    image: 'assets/images/skills/vscode.png'
+  },
+  {
+    name: 'Django',
+    description: 'Backend',
+    link: 'https://www.django-rest-framework.org/',
+    type: 'development',
+    image: 'assets/images/skills/django.png'
+  },
+  {
+    name: 'Firebase',
+    description: 'Database and Hosting',
+    link: 'https://firebase.google.com/',
+    type: 'development',
+    image: 'assets/images/skills/firebase.png'
+  },
+  {
+    name: 'Flow',
+    description: 'Static type checker for javascript',
+    link: 'https://flow.org/en/',
+    type: 'development',
+    image: 'assets/images/skills/flow.png'
+  },
+  {
+    name: 'Git',
+    description: 'Version control system',
+    link: 'https://git-scm.com/',
+    type: 'development',
+    image: 'assets/images/skills/git.png'
+  },
+  {
+    name: 'GraphQL',
+    description: 'Query language for APIs',
+    link: 'https://graphql.org/',
+    type: 'development',
+    image: 'assets/images/skills/graphql.png'
+  },
+  {
+    name: 'Jest',
+    description: 'JavaScript Testing Framework',
+    link: 'https://jestjs.io/',
+    type: 'development',
+    image: 'assets/images/skills/jest.png'
+  },
+
+  {
+    name: 'NodeJs',
+    description: 'JavaScript runtime',
+    link: 'https://nodejs.org/en/',
+    type: 'development',
+    image: 'assets/images/skills/nodejs.png'
+  },
+  {
+    name: 'CSS3',
     description: 'Web design',
     link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     type: 'design',
@@ -144,66 +187,45 @@ export const skillsArray = [
     image: 'assets/images/skills/bootstrap.png'
   },
   {
-    name: 'Postgres',
-    description: 'Database',
-    link: 'https://www.postgresql.org/',
-    type: 'database',
-    image: 'assets/images/skills/postgresql.png'
+    name: 'PyTorch',
+    description: 'Machine learning framework',
+    link: 'https://pytorch.org/',
+    type: 'ml',
+    image: 'assets/images/skills/pytorch.png'
   },
   {
-    name: 'Mysql',
+    name: 'scikit-learn',
+    description: 'Machine learning framework',
+    link: 'https://scikit-learn.org/',
+    type: 'ml',
+    image: 'assets/images/skills/scikit.png'
+  },
+  {
+    name: 'Streamlit',
+    description: 'Build and share data apps',
+    link: 'https://streamlit.io/',
+    type: 'ml',
+    image: 'assets/images/skills/streamlit.png'
+  },
+  {
+    name: 'C++',
+    description: 'Language',
+    link: 'https://getbootstrap.com/',
+    type: 'language',
+    image: 'assets/images/skills/c++.png'
+  },
+  {
+    name: 'Kotlin',
+    description: 'Language',
+    link: 'https://kotlinlang.org/',
+    type: 'language',
+    image: 'assets/images/skills/kotlin.png'
+  },
+  {
+    name: 'MySQL',
     description: 'Database',
     link: 'https://www.mysql.com/',
     type: 'database',
     image: 'assets/images/skills/mysql.png'
-  },
-  {
-    name: 'Redis',
-    description: 'Database',
-    link: 'https://redis.io/',
-    type: 'database',
-    image: 'assets/images/skills/redis.png'
-  },
-  {
-    name: 'Heroku',
-    description: 'Devops',
-    link: 'https://www.heroku.com/',
-    type: 'devops',
-    image: 'assets/images/skills/heroku.png'
-  },
-  {
-    name: 'AWS',
-    description: 'Devops',
-    link: 'https://aws.amazon.com/',
-    type: 'devops',
-    image: 'assets/images/skills/aws.png'
-  },
-  {
-    name: 'Digital Ocean',
-    description: 'Devops',
-    link: 'https://www.digitalocean.com/',
-    type: 'devops',
-    image: 'assets/images/skills/digital-ocean.png'
-  },
-  {
-    name: 'Nginx',
-    description: 'Web server',
-    link: 'https://www.nginx.com/',
-    type: 'devops',
-    image: 'assets/images/skills/nginx.png'
-  },
-  {
-    name: 'Visual Studio Code',
-    description: 'Code editor of choice',
-    link: 'https://code.visualstudio.com/',
-    type: 'development',
-    image: 'assets/images/skills/vscode.png'
-  },
-  {
-    name: 'Figma',
-    description: 'Collaborative Design',
-    link: 'https://www.figma.com/',
-    type: 'design',
-    image: 'assets/images/skills/figma.png'
   }
 ];

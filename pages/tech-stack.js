@@ -14,6 +14,7 @@ import {
   SimpleGrid
 } from '@chakra-ui/react';
 import Section from '../components/skills/section';
+import { FaRobot } from 'react-icons/fa';
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from 'react-icons/ai';
 import { BiDesktop } from 'react-icons/bi';
 import { GiSpiderWeb } from 'react-icons/gi';
@@ -51,7 +52,7 @@ const TechStack = ({ skills }) => {
                 color={useColorModeValue('gray.500', 'gray.200')}
                 maxW="lg"
                 textAlign="center">
-                A list of my favorite tools and technologies that I use on a regular basis.
+                This is a list of my favourite tools and technologies that I use frequently.
               </Text>
             </VStack>
           </Section>
@@ -112,10 +113,10 @@ const TechStack = ({ skills }) => {
                   }}
                   mr={2}
                   mt={2}
-                  onClick={() => filterSkills('devops')}>
+                  onClick={() => filterSkills('ml')}>
                   <HStack spacing={1}>
-                    <Icon as={AiOutlineCloudServer} />
-                    <Text>Devops</Text>
+                    <Icon as={FaRobot} />
+                    <Text>Machine Learning</Text>
                   </HStack>
                 </Tab>
               </TabList>
@@ -129,7 +130,6 @@ const TechStack = ({ skills }) => {
                           name={tool.name}
                           description={tool.description}
                           image={tool.image}
-                          // platform={"web"}
                           link={tool.link}
                         />
                       ))}
@@ -145,7 +145,6 @@ const TechStack = ({ skills }) => {
                           name={tool.name}
                           description={tool.description}
                           image={tool.image}
-                          // platform={"web"}
                           link={tool.link}
                         />
                       ))}
@@ -161,7 +160,6 @@ const TechStack = ({ skills }) => {
                           name={tool.name}
                           description={tool.description}
                           image={tool.image}
-                          // platform={"web"}
                           link={tool.link}
                         />
                       ))}
@@ -177,7 +175,6 @@ const TechStack = ({ skills }) => {
                           name={tool.name}
                           description={tool.description}
                           image={tool.image}
-                          // platform={"web"}
                           link={tool.link}
                         />
                       ))}
