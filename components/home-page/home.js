@@ -14,7 +14,6 @@ import { MotionBox, MotionFlex } from '../ui/motion';
 import Header from '../layout/header';
 import Projects from './projects';
 import NextLink from 'next/link';
-// import UserIcon from "assets/images/user_icon.png";
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = '#ff9400';
@@ -38,7 +37,7 @@ const Home = ({ projects }) => {
           }}
           m="auto"
           mb={[16, 16, 'auto']}>
-          <Avatar size={'2xl'} src={'https://avatars2.githubusercontent.com/u/37842853?v=4'} />
+          <Avatar size={'2xl'} src="assets/images/user_icon.png" />
         </MotionBox>
         <MotionFlex
           ml={['auto', 'auto', 16]}

@@ -83,11 +83,7 @@ export default function TopNav() {
           <HStack spacing={8} alignItems={'center'}>
             <Box>
               <NextLink href={'/'} passHref>
-                <Avatar
-                  as={Link}
-                  size={'sm'}
-                  src={'https://avatars2.githubusercontent.com/u/37842853?v=4'}
-                />
+                <Avatar as={Link} size={'sm'} src="assets/images/user_icon.png" />
               </NextLink>
             </Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
