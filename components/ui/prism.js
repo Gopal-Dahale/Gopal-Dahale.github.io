@@ -1,6 +1,7 @@
-import { css, Global } from '@emotion/react';
-import { useColorMode } from '@chakra-ui/react';
-import { theme } from '@chakra-ui/react';
+/* ------------------------ Imports ------------------------ */
+import { css, Global } from '@emotion/react'
+import { useColorMode, theme } from '@chakra-ui/react'
+
 // import { theme } from "./theme";
 
 const prismBaseTheme = css`
@@ -72,7 +73,7 @@ const prismBaseTheme = css`
     color: ${theme.colors.gray[800]};
     background: none;
     font-family: 'Menlo', Monaco, Consolas, Courier New, monospace;
-    font-size: ${theme.fontSizes['sm']};
+    font-size: ${theme.fontSizes.sm};
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -113,7 +114,7 @@ const prismBaseTheme = css`
   }
 
   :not(pre) > code {
-    font-size: ${theme.fontSizes['sm']};
+    font-size: ${theme.fontSizes.sm};
   }
 
   :not(pre) > code:before,
@@ -222,7 +223,7 @@ const prismBaseTheme = css`
       margin-top: 0;
     }
   }
-`;
+`
 
 export const prismLightTheme = css`
   ${prismBaseTheme};
@@ -325,7 +326,7 @@ export const prismLightTheme = css`
     line-height: 2;
     border-color: ${theme.colors.gray[500]};
   }
-`;
+`
 
 export const prismDarkTheme = css`
   ${prismBaseTheme};
@@ -428,9 +429,9 @@ export const prismDarkTheme = css`
     line-height: 2;
     border-color: ${theme.colors.gray[500]};
   }
-`;
+`
 
 export const PrismGlobal = () => {
-  const { colorMode } = useColorMode();
-  return <Global styles={colorMode === 'light' ? prismLightTheme : prismDarkTheme} />;
-};
+  const { colorMode } = useColorMode()
+  return <Global styles={colorMode === 'light' ? prismLightTheme : prismDarkTheme} />
+}

@@ -1,5 +1,6 @@
-import { PropsWithChildren } from 'react';
-import { Box } from '@chakra-ui/react';
+/* ------------------------ Imports ------------------------ */
+import { PropsWithChildren } from 'react'
+import { Box } from '@chakra-ui/react'
 
 const UnderlinedText = (props) => (
   <Box as="span" display="inline-block" position="relative">
@@ -8,11 +9,11 @@ const UnderlinedText = (props) => (
       as="span"
       display="block"
       position="absolute"
-      bg={'gray.200'}
-      w={'100%'}
+      bg="gray.200"
+      w="100%"
       h={props.h || '1px'}
       bottom={-2}
     />
   </Box>
-);
-export default UnderlinedText;
+)
+export default UnderlinedText

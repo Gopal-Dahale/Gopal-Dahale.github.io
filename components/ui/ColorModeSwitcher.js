@@ -1,11 +1,12 @@
-import { useColorMode, useColorModeValue, IconButtonProps } from '@chakra-ui/react';
-import useSound from 'use-sound';
-import { AnimatePresence } from 'framer-motion';
-import { MotionBox } from './motion';
+/* ------------------------ Imports ------------------------ */
+import { useColorMode, useColorModeValue, IconButtonProps } from '@chakra-ui/react'
+import useSound from 'use-sound'
+import { AnimatePresence } from 'framer-motion'
+import { MotionBox } from './motion'
 
 export const ColorModeSwitcher = (props) => {
-  const { toggleColorMode } = useColorMode();
-  const mode = useColorModeValue('dark', 'light');
+  const { toggleColorMode } = useColorMode()
+  const mode = useColorModeValue('dark', 'light')
 
   const [play] = useSound('/assets/audios/lightswitch.mp3', {
     volume: 0.05,
@@ -13,12 +14,12 @@ export const ColorModeSwitcher = (props) => {
       on: [0, 300],
       off: [500, 300]
     }
-  });
+  })
 
   const handleClick = () => {
-    mode === 'dark' ? play({ id: 'on' }) : play({ id: 'off' });
-    toggleColorMode();
-  };
+    mode === 'dark' ? play({ id: 'on' }) : play({ id: 'off' })
+    toggleColorMode()
+  }
 
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
@@ -34,5 +35,5 @@ export const ColorModeSwitcher = (props) => {
         {mode === 'dark' ? '🌤' : '🌙'}
       </MotionBox>
     </AnimatePresence>
-  );
-};
+  )
+}

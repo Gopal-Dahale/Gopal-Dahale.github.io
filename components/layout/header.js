@@ -1,5 +1,6 @@
-import { Box } from '@chakra-ui/react';
-import UnderlinedText from '../ui/underlined-text';
+/* ------------------------ Imports ------------------------ */
+import { Box } from '@chakra-ui/react'
+import UnderlinedText from '../ui/underlined-text'
 
 const Header = ({ children, underlineColor, emoji, ...props }) => (
   <Box
@@ -12,7 +13,7 @@ const Header = ({ children, underlineColor, emoji, ...props }) => (
     {...props}
     textAlign="left">
     <UnderlinedText color={underlineColor}>{children}</UnderlinedText>
-    {emoji ? ' ' + emoji : ''}
+    {emoji ? ` ${emoji}` : ''}
   </Box>
-);
-export default Header;
+)
+export default Header

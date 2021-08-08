@@ -1,6 +1,7 @@
-import React from 'react';
-import { Box, Circle, Flex, useColorModeValue } from '@chakra-ui/react';
-import { FiCheckCircle } from 'react-icons/fi';
+/* ------------------------ Imports ------------------------ */
+import React from 'react'
+import { Box, Circle, Flex, useColorModeValue } from '@chakra-ui/react'
+import { FiCheckCircle } from 'react-icons/fi'
 
 export const TimelineItem = ({
   icon = FiCheckCircle,
@@ -9,7 +10,7 @@ export const TimelineItem = ({
   children,
   ...props
 }) => {
-  const color = useColorModeValue('gray.700', 'gray.500');
+  const color = useColorModeValue('gray.700', 'gray.500')
   return (
     <Flex minH={20} {...props}>
       <Flex flexDir="column" alignItems="center" mr={4} pos="relative">
@@ -26,5 +27,5 @@ export const TimelineItem = ({
         {children}
       </Box>
     </Flex>
-  );
-};
+  )
+}

@@ -1,4 +1,5 @@
-import React from 'react';
+/* ------------------------ Imports ------------------------ */
+import React from 'react'
 import {
   HStack,
   VStack,
@@ -8,14 +9,14 @@ import {
   Link,
   Image,
   Skeleton
-} from '@chakra-ui/react';
-import { usePalette } from 'react-palette';
-import { MotionBox } from '../ui/motion';
-import { item } from '../ui/page-transitions';
-import NextLink from 'next/link';
+} from '@chakra-ui/react'
+import { usePalette } from 'react-palette'
+import NextLink from 'next/link'
+import { MotionBox } from '../ui/motion'
+import { item } from '../ui/page-transitions'
 
 const SkillCard = ({ name, image, link, description }) => {
-  const { data, loading } = usePalette(image);
+  const { data, loading } = usePalette(image)
 
   return (
     <MotionBox variants={item}>
@@ -47,7 +48,8 @@ const SkillCard = ({ name, image, link, description }) => {
                   bottom={0}
                   left={0}
                   right={0}
-                  opacity={0.25}></Box>
+                  opacity={0.25}
+                />
                 {loading ? (
                   <Skeleton height={26} width={26} rounded="md" />
                 ) : (
@@ -69,7 +71,7 @@ const SkillCard = ({ name, image, link, description }) => {
         </NextLink>
       </MotionBox>
     </MotionBox>
-  );
-};
+  )
+}
 
-export default SkillCard;
+export default SkillCard

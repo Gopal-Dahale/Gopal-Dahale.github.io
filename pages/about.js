@@ -1,3 +1,4 @@
+/* ------------------------ Imports ------------------------ */
 import {
   Box,
   Stack,
@@ -10,19 +11,19 @@ import {
   Link,
   useColorMode,
   useColorModeValue
-} from '@chakra-ui/react';
-import { FaGraduationCap } from 'react-icons/fa';
-import { BsFillBriefcaseFill } from 'react-icons/bs';
-import { PageSlideFade, StaggerChildren, CardTransition } from '../components/ui/page-transitions';
-import { MotionBox } from '../components/ui/motion';
-import { companies, institutes } from '../data/data';
-import Header from '../components/layout/header';
-import PageLayout from '../components/layout/pageLayout';
+} from '@chakra-ui/react'
+import { FaGraduationCap } from 'react-icons/fa'
+import { BsFillBriefcaseFill } from 'react-icons/bs'
+import { PageSlideFade, StaggerChildren, CardTransition } from '../components/ui/page-transitions'
+import { MotionBox } from '../components/ui/motion'
+import { companies, institutes } from '../data/data'
+import Header from '../components/layout/header'
+import PageLayout from '../components/layout/pageLayout'
 
-const TURQUOISE = '#06b6d4';
+const TURQUOISE = '#06b6d4'
 
 const Card = (props) => {
-  const { title, role, skills, period, logo, link, colorMode, alt } = props;
+  const { title, role, skills, period, logo, link, colorMode, alt } = props
   return (
     <CardTransition>
       <Box
@@ -35,7 +36,7 @@ const Card = (props) => {
         rounded="md">
         <Flex justifyContent="space-between">
           <Flex>
-            <a target="_blank" href={link}>
+            <a target="_blank" href={link} rel="noreferrer">
               <Image
                 rounded="full"
                 w={16}
@@ -70,7 +71,8 @@ const Card = (props) => {
                 mt={3}
                 isInline
                 alignItems="center"
-                display={['none', 'none', 'flex', 'flex']}></Stack>
+                display={['none', 'none', 'flex', 'flex']}
+              />
             </Stack>
           </Flex>
           <Stack display={['none', 'none', 'flex', 'flex']}>
@@ -93,11 +95,11 @@ const Card = (props) => {
         </Stack>
       </Box>
     </CardTransition>
-  );
-};
+  )
+}
 
 const About = ({ companies, institutes }) => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode()
 
   return (
     <PageLayout title="About" description="My educational and professional journey so far">
@@ -160,8 +162,8 @@ const About = ({ companies, institutes }) => {
         </StaggerChildren>
       </PageSlideFade>
     </PageLayout>
-  );
-};
+  )
+}
 
 export function getStaticProps() {
   return {
@@ -169,7 +171,7 @@ export function getStaticProps() {
       companies,
       institutes
     }
-  };
+  }
 }
 
-export default About;
+export default About

@@ -1,4 +1,5 @@
-import * as React from 'react';
+/* ------------------------ Imports ------------------------ */
+import * as React from 'react'
 import {
   Box,
   Image,
@@ -19,46 +20,46 @@ import {
   Center,
   Flex,
   Tooltip
-} from '@chakra-ui/react';
-import { useState } from 'react';
-import { MotionBox } from '../ui/motion';
-import { getTagColor } from '../ui/theme';
-import useFetch from 'use-http';
-import { BiGitRepoForked, BiStar } from 'react-icons/bi';
-import { FiGithub } from 'react-icons/fi';
-import { VscRocket } from 'react-icons/vsc';
-import { CardTransition } from '../ui/page-transitions';
-import LazyImage from '../ui/lazy-image';
+} from '@chakra-ui/react'
+import { useState } from 'react'
+import useFetch from 'use-http'
+import { BiGitRepoForked, BiStar } from 'react-icons/bi'
+import { FiGithub } from 'react-icons/fi'
+import { VscRocket } from 'react-icons/vsc'
+import { getTagColor } from '../ui/theme'
+import { MotionBox } from '../ui/motion'
+import { CardTransition } from '../ui/page-transitions'
+import LazyImage from '../ui/lazy-image'
 
 const RepositoryCard = (props) => {
-  const { title, cover, blurHash, technologies, url, live } = props;
-  const { get } = useFetch('https://api.github.com');
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { title, cover, blurHash, technologies, url, live } = props
+  const { get } = useFetch('https://api.github.com')
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
-  const [loadingState, setLoadingState] = useState(false);
-  const [description, setDescription] = useState(null);
-  const [stars, setStars] = useState(null);
-  const [forks, setForks] = useState(null);
+  const [loadingState, setLoadingState] = useState(false)
+  const [description, setDescription] = useState(null)
+  const [stars, setStars] = useState(null)
+  const [forks, setForks] = useState(null)
 
   const handleClick = () => {
-    onOpen();
-    setLoadingState(true);
+    onOpen()
+    setLoadingState(true)
     get(`/repos${url.split('github.com')[1]}`).then((res) => {
       if (res) {
-        setDescription(res.description);
-        setStars(res.stargazers_count);
-        setForks(res.forks_count);
+        setDescription(res.description)
+        setStars(res.stargazers_count)
+        setForks(res.forks_count)
       }
-      setLoadingState(false);
-    });
-  };
+      setLoadingState(false)
+    })
+  }
 
   const handleLinkClick = (e, link) => {
-    window.open(link);
-    e.stopPropagation();
-  };
+    window.open(link)
+    e.stopPropagation()
+  }
 
-  const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
+  const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
 
   const thumbnailVariants = {
     initial: { scale: 0.9, opacity: 0 },
@@ -68,11 +69,11 @@ const RepositoryCard = (props) => {
       opacity: 0,
       transition: { duration: 1.5, ...transition }
     }
-  };
+  }
 
   const imageVariants = {
     hover: { scale: 1.1 }
-  };
+  }
 
   return (
     <CardTransition>
@@ -104,10 +105,10 @@ const RepositoryCard = (props) => {
             </MotionBox>
           </Box>
           <VStack py={2} px={[2, 4]} spacing={1} align="start" w="100%">
-            <Flex justifyContent={'space-between'} width="100%">
+            <Flex justifyContent="space-between" width="100%">
               <Tooltip hasArrow label="Github link" placement="top">
                 <HStack>
-                  <Icon as={FiGithub} boxSize="0.9em" mt={'1px'} />
+                  <Icon as={FiGithub} boxSize="0.9em" mt="1px" />
                   <Text
                     fontSize="sm"
                     noOfLines={1}
@@ -119,7 +120,7 @@ const RepositoryCard = (props) => {
                 </HStack>
               </Tooltip>
             </Flex>
-            <Flex justifyContent={'space-between'} width="100%">
+            <Flex justifyContent="space-between" width="100%">
               <Box>
                 <HStack spacing="1">
                   {technologies.map((tech, index) => (
@@ -134,7 +135,7 @@ const RepositoryCard = (props) => {
         </VStack>
         <Modal isOpen={isOpen} onClose={onClose} isCentered allowPinchZoom>
           <ModalOverlay />
-          <ModalContent bg="none" maxW={'28rem'} w="auto">
+          <ModalContent bg="none" maxW="28rem" w="auto">
             <ModalBody p={0} rounded="lg" overflow="hidden" bg="none">
               <Box bg={useColorModeValue('white', 'gray.900')}>
                 <Image src={cover} />
@@ -146,10 +147,10 @@ const RepositoryCard = (props) => {
                 align="start"
                 w="100%"
                 bg={useColorModeValue('white', 'gray.900')}>
-                <Flex justifyContent={'space-between'} width="100%">
+                <Flex justifyContent="space-between" width="100%">
                   <Tooltip hasArrow label="Github link" placement="top">
                     <HStack maxWidth="80%">
-                      <Icon as={FiGithub} boxSize="0.9em" mt={'1px'} />
+                      <Icon as={FiGithub} boxSize="0.9em" mt="1px" />
                       <Text
                         fontSize="sm"
                         noOfLines={2}
@@ -166,12 +167,12 @@ const RepositoryCard = (props) => {
                       <Skeleton height="30px" width="60px" />
                     </Box>
                   ) : (
-                    <HStack cursor={'pointer'}>
+                    <HStack cursor="pointer">
                       {forks && (
                         <Box
                           _hover={{ color: 'blue.500' }}
                           onClick={(e) => handleLinkClick(e, url)}>
-                          <Icon as={BiGitRepoForked} boxSize="0.9em" mt={'1px'} />
+                          <Icon as={BiGitRepoForked} boxSize="0.9em" mt="1px" />
                           <Box as="span" ml="1" fontSize="sm">
                             {forks}
                           </Box>
@@ -181,7 +182,7 @@ const RepositoryCard = (props) => {
                         <Box
                           _hover={{ color: 'blue.500' }}
                           onClick={(e) => handleLinkClick(e, url)}>
-                          <Icon as={BiStar} boxSize="0.9em" mt={'1px'} />
+                          <Icon as={BiStar} boxSize="0.9em" mt="1px" />
                           <Box as="span" ml="1" fontSize="sm">
                             {stars}
                           </Box>
@@ -192,14 +193,14 @@ const RepositoryCard = (props) => {
                           <Box
                             _hover={{ color: 'blue.500' }}
                             onClick={(e) => handleLinkClick(e, live)}>
-                            <Icon as={VscRocket} boxSize="0.9em" mt={'1px'} />
+                            <Icon as={VscRocket} boxSize="0.9em" mt="1px" />
                           </Box>
                         </Tooltip>
                       )}
                     </HStack>
                   )}
                 </Flex>
-                <Flex justifyContent={'space-between'} width="100%">
+                <Flex justifyContent="space-between" width="100%">
                   <Box>
                     <HStack spacing="1">
                       {technologies.map((tech, index) => (
@@ -231,7 +232,7 @@ const RepositoryCard = (props) => {
         </Modal>
       </Box>
     </CardTransition>
-  );
-};
+  )
+}
 
-export default RepositoryCard;
+export default RepositoryCard

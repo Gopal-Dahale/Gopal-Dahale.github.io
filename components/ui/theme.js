@@ -1,5 +1,6 @@
-import { extendTheme } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools';
+/* ------------------------ Imports ------------------------ */
+import { extendTheme } from '@chakra-ui/react'
+import { mode } from '@chakra-ui/theme-tools'
 
 export const theme = extendTheme({
   // fonts: {
@@ -178,19 +179,23 @@ export const theme = extendTheme({
       lineHeight: 'normal'
     }
   }
-});
+})
 
 export const getTagColor = (type) => {
-  type = type.toLowerCase();
+  type = type.toLowerCase()
   if (type === 'rails' || type === 'ruby') {
-    return 'red';
-  } else if (type === 'react') {
-    return 'cyan';
-  } else if (type === 'javascript') {
-    return 'yellow';
-  } else if (type === 'typescript' || type === 'tailwindcss') {
-    return 'blue';
-  } else if (type === 'chakraui' || type === 'css') {
-    return 'teal';
+    return 'red'
   }
-};
+  if (type === 'react') {
+    return 'cyan'
+  }
+  if (type === 'javascript') {
+    return 'yellow'
+  }
+  if (type === 'typescript' || type === 'tailwindcss') {
+    return 'blue'
+  }
+  if (type === 'chakraui' || type === 'css') {
+    return 'teal'
+  }
+}

@@ -1,5 +1,6 @@
-import * as React from 'react';
-import { useState } from 'react';
+/* ------------------------ Imports ------------------------ */
+import * as React from 'react'
+import { useState } from 'react'
 import {
   Icon,
   VStack,
@@ -12,31 +13,31 @@ import {
   TabPanel,
   useColorModeValue,
   SimpleGrid
-} from '@chakra-ui/react';
-import Section from '../components/skills/section';
-import { FaRobot } from 'react-icons/fa';
-import { AiTwotoneThunderbolt, AiOutlineCloudServer } from 'react-icons/ai';
-import { BiDesktop } from 'react-icons/bi';
-import { GiSpiderWeb } from 'react-icons/gi';
-import SkillCard from '../components/skills/skill-card';
-import { skillsArray } from '../data/data';
-import Header from '../components/layout/header';
-import { MotionBox } from '../components/ui/motion';
-import { container, PageSlideFade } from '../components/ui/page-transitions';
-import PageLayout from '../components/layout/pageLayout';
+} from '@chakra-ui/react'
+import { FaRobot } from 'react-icons/fa'
+import { AiTwotoneThunderbolt, AiOutlineCloudServer } from 'react-icons/ai'
+import { BiDesktop } from 'react-icons/bi'
+import { GiSpiderWeb } from 'react-icons/gi'
+import Section from '../components/skills/section'
+import SkillCard from '../components/skills/skill-card'
+import { skillsArray } from '../data/data'
+import Header from '../components/layout/header'
+import { MotionBox } from '../components/ui/motion'
+import { container, PageSlideFade } from '../components/ui/page-transitions'
+import PageLayout from '../components/layout/pageLayout'
 
 const TechStack = ({ skills }) => {
-  const [skillsList, setSkillsList] = useState([]);
+  const [skillsList, setSkillsList] = useState([])
 
   React.useEffect(() => {
-    setSkillsList(skills);
-  }, []);
+    setSkillsList(skills)
+  }, [])
 
   const filterSkills = (tab) => {
-    console.log(skills.filter((skill) => skill.type === tab));
-    if (tab.length) setSkillsList(skills.filter((skill) => skill.type === tab));
-    else setSkillsList(skills);
-  };
+    console.log(skills.filter((skill) => skill.type === tab))
+    if (tab.length) setSkillsList(skills.filter((skill) => skill.type === tab))
+    else setSkillsList(skills)
+  }
 
   return (
     <PageLayout title="Skills" keywords="rails, ruby, react, javascript, typescript">
@@ -48,7 +49,7 @@ const TechStack = ({ skills }) => {
                 Tech Stack
               </Header>
               <Text
-                fontSize={'xl'}
+                fontSize="xl"
                 color={useColorModeValue('gray.500', 'gray.200')}
                 maxW="lg"
                 textAlign="center">
@@ -120,7 +121,7 @@ const TechStack = ({ skills }) => {
                   </HStack>
                 </Tab>
               </TabList>
-              <TabPanels minHeight={'45vh'}>
+              <TabPanels minHeight="45vh">
                 <TabPanel px={0}>
                   <MotionBox variants={container} initial="hidden" animate="visible">
                     <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
@@ -187,15 +188,15 @@ const TechStack = ({ skills }) => {
         </VStack>
       </PageSlideFade>
     </PageLayout>
-  );
-};
+  )
+}
 
 export function getStaticProps() {
   return {
     props: {
       skills: skillsArray
     }
-  };
+  }
 }
 
-export default TechStack;
+export default TechStack

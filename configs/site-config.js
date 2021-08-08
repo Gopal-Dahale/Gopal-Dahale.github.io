@@ -1,6 +1,7 @@
-import { FaGithub, FaLinkedin, FaQuora } from 'react-icons/fa';
-import { SiCodechef, SiHackerrank, SiLeetcode } from 'react-icons/si';
-import { FiMail } from 'react-icons/fi';
+/* ------------------------ Imports ------------------------ */
+import { FaGithub, FaLinkedin, FaQuora } from 'react-icons/fa'
+import { SiCodechef, SiHackerrank, SiLeetcode } from 'react-icons/si'
+import { FiMail } from 'react-icons/fi'
 
 const siteConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} Muhammad Ahmad. All Rights Reserved.`,
@@ -45,6 +46,6 @@ const siteConfig = {
       }
     ]
   }
-};
+}
 
-export default siteConfig;
+export default siteConfig
