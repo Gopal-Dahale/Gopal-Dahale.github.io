@@ -52,7 +52,7 @@ const Achievements = () => (
           2020
         </Heading>
         <Box>
-          <TimelineItem icon={FiBarChart2} skipTrail>
+          <TimelineItem icon={FiBarChart2}>
             Completed an online course Data Analysis with Python organised by
             <ExternalLink
               color="blue.200"
@@ -61,7 +61,7 @@ const Achievements = () => (
               target="_blank"
             />
           </TimelineItem>
-          <TimelineItem icon={SiKotlin} skipTrail>
+          <TimelineItem icon={SiKotlin}>
             Participated in
             <ExternalLink
               color="blue.200"
@@ -71,7 +71,7 @@ const Achievements = () => (
             />
             organized by Google Developers.
           </TimelineItem>
-          <TimelineItem icon={SiIbm} skipTrail>
+          <TimelineItem icon={SiIbm}>
             Earned
             <ExternalLink
               color="blue.200"
@@ -81,7 +81,7 @@ const Achievements = () => (
             />
             Badge
           </TimelineItem>
-          <TimelineItem icon={SiHackerrank} skipTrail>
+          <TimelineItem icon={SiHackerrank}>
             Secured 43 rank out of 1513 in
             <ExternalLink
               color="blue.200"
