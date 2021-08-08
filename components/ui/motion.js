@@ -1,4 +1,5 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import { Box, Flex, Image, forwardRef } from '@chakra-ui/react'
 import { motion, isValidMotionProp } from 'framer-motion'
 

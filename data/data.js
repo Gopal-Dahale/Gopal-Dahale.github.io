@@ -35,7 +35,7 @@ export const companies = [
     logo: 'assets/images/logos/cppsecrets.png',
     link: 'https://cppsecrets.com/user/index.php?uid=817'
   }
-];
+]
 
 export const institutes = [
   {
@@ -77,7 +77,7 @@ export const institutes = [
     logo: 'assets/images/logos/Kendriya_Vidyalaya_logo.png',
     link: 'https://ongcpanvel.kvs.ac.in/'
   }
-];
+]
 
 export const skillsArray = [
   {
@@ -228,4 +228,4 @@ export const skillsArray = [
     type: 'database',
     image: 'assets/images/skills/mysql.png'
   }
-];
+]

@@ -17,16 +17,19 @@ import {
   Skeleton,
   ModalContent,
   ModalBody,
-  Center,
   Flex,
   Tooltip
 } from '@chakra-ui/react'
 import { useState } from 'react'
 import useFetch from 'use-http'
+import PropTypes from 'prop-types'
+
+// Icons
 import { BiGitRepoForked, BiStar } from 'react-icons/bi'
 import { FiGithub } from 'react-icons/fi'
 import { VscRocket } from 'react-icons/vsc'
-import PropTypes from 'prop-types'
+
+// Custom Components
 import { getTagColor } from '../ui/theme'
 import { MotionBox } from '../ui/motion'
 import { CardTransition } from '../ui/page-transitions'
@@ -235,6 +238,25 @@ const RepositoryCard = (props) => {
       </Box>
     </CardTransition>
   )
+}
+
+/* ------------------------ PropTypes ------------------------ */
+RepositoryCard.propTypes = {
+  title: PropTypes.string,
+  cover: PropTypes.string,
+  blurHash: PropTypes.string,
+  technologies: PropTypes.array,
+  url: PropTypes.string,
+  live: PropTypes.string
+}
+
+RepositoryCard.defaultProps = {
+  title: '',
+  cover: '',
+  blurHash: '',
+  technologies: [],
+  url: '',
+  live: ''
 }
 
 export default RepositoryCard

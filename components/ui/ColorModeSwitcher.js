@@ -1,12 +1,14 @@
 /* ------------------------ Imports ------------------------ */
-import { useColorMode, useColorModeValue, IconButtonProps } from '@chakra-ui/react'
+import React from 'react'
+import { useColorMode, useColorModeValue } from '@chakra-ui/react'
 import useSound from 'use-sound'
 import { AnimatePresence } from 'framer-motion'
-import PropTypes from 'prop-types'
+
+// Custom Components
 import { MotionBox } from './motion'
 
 /* ------------------------ Component ------------------------ */
-export const ColorModeSwitcher = (props) => {
+const ColorModeSwitcher = () => {
   const { toggleColorMode } = useColorMode()
   const mode = useColorModeValue('dark', 'light')
 
@@ -19,7 +21,11 @@ export const ColorModeSwitcher = (props) => {
   })
 
   const handleClick = () => {
-    mode === 'dark' ? play({ id: 'on' }) : play({ id: 'off' })
+    if (mode === 'dark') {
+      play({ id: 'on' })
+    } else {
+      play({ id: 'off' })
+    }
     toggleColorMode()
   }
 
@@ -39,3 +45,5 @@ export const ColorModeSwitcher = (props) => {
     </AnimatePresence>
   )
 }
+
+export default ColorModeSwitcher

@@ -1,6 +1,9 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import { Box } from '@chakra-ui/react'
 import PropTypes from 'prop-types'
+
+// Custom Components
 import UnderlinedText from '../ui/underlined-text'
 
 /* ------------------------ Component ------------------------ */
@@ -18,4 +21,18 @@ const Header = ({ children, underlineColor, emoji, ...props }) => (
     {emoji ? ` ${emoji}` : ''}
   </Box>
 )
+
+/* ------------------------ PropTypes ------------------------ */
+Header.propTypes = {
+  children: PropTypes.elementType,
+  underlineColor: PropTypes.string,
+  emoji: PropTypes.string
+}
+
+Header.defaultProps = {
+  children: {},
+  underlineColor: '',
+  emoji: ''
+}
+
 export default Header

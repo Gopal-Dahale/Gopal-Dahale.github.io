@@ -1,4 +1,5 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
@@ -12,6 +13,13 @@ const Meta = ({ title, keywords, description }) => (
     <title>{title}</title>
   </Head>
 )
+
+/* ------------------------ PropTypes ------------------------ */
+Meta.propTypes = {
+  title: PropTypes.string,
+  keywords: PropTypes.string,
+  description: PropTypes.string
+}
 
 Meta.defaultProps = {
   title: 'Gopal Dahale - Full Stack Developer/ Machine Learning Developer',

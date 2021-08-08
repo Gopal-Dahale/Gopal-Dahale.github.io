@@ -1,5 +1,9 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import { SlideFade } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
+
+// Custom Components
 import { MotionBox } from './motion'
 
 /* ------------------------ Transitions ------------------------ */
@@ -100,3 +104,28 @@ export const StaggerChildren = ({ children }) => (
 export const CardTransition = ({ children }) => (
   <MotionBox variants={variants}>{children}</MotionBox>
 )
+
+/* ------------------------ PropTypes ------------------------ */
+PageSlideFade.propTypes = {
+  children: PropTypes.elementType
+}
+
+StaggerChildren.propTypes = {
+  children: PropTypes.elementType
+}
+
+CardTransition.propTypes = {
+  children: PropTypes.elementType
+}
+
+PageSlideFade.defaultProps = {
+  children: {}
+}
+
+StaggerChildren.defaultProps = {
+  children: {}
+}
+
+CardTransition.defaultProps = {
+  children: {}
+}

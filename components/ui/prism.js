@@ -1,4 +1,5 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import { css, Global } from '@emotion/react'
 import { useColorMode, theme } from '@chakra-ui/react'
 

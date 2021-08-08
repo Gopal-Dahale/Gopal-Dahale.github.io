@@ -1,4 +1,5 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import {
   Box,
   Flex,
@@ -8,15 +9,19 @@ import {
   IconButton,
   useDisclosure,
   useColorModeValue,
-  Stack,
-  Icon
+  Stack
 } from '@chakra-ui/react'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { AiOutlineClose } from 'react-icons/ai'
 import NextLink from 'next/link'
 import PropTypes from 'prop-types'
-import { ColorModeSwitcher } from '../ui/ColorModeSwitcher'
 
+// Icons
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { AiOutlineClose } from 'react-icons/ai'
+
+// Custom Components
+import ColorModeSwitcher from '../ui/ColorModeSwitcher'
+
+// Constants
 const webLinks = [
   { name: 'About', path: '/about' },
   { name: 'Tech Stack', path: '/tech-stack' },
@@ -25,12 +30,13 @@ const webLinks = [
 ]
 
 const NavLink = (props) => {
+  const { path, name, onClose } = props
   const link = {
     bg: useColorModeValue('gray.200', 'gray.900'),
     color: useColorModeValue('blue.500', 'blue.200')
   }
   return (
-    <NextLink href={props.path} passHref>
+    <NextLink href={path} passHref>
       <Link
         px={2}
         py={1}
@@ -42,10 +48,8 @@ const NavLink = (props) => {
         _activeLink={{
           color: link.color
         }}
-        onClick={() => props.onClose()}
-        // to={props.path}
-      >
-        {props.name}
+        onClick={() => onClose()}>
+        {name}
       </Link>
     </NextLink>
   )
@@ -54,11 +58,6 @@ const NavLink = (props) => {
 /* ------------------------ Component ------------------------ */
 export default function TopNav() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-
-  const menuProps = {
-    bg: useColorModeValue('gray.200', 'gray.900'),
-    color: useColorModeValue('blue.500', 'blue.200')
-  }
 
   return (
     <>
@@ -122,4 +121,17 @@ export default function TopNav() {
       </Box>
     </>
   )
+}
+
+/* ------------------------ PropTypes ------------------------ */
+NavLink.propTypes = {
+  path: PropTypes.string,
+  name: PropTypes.string,
+  onClose: PropTypes.func
+}
+
+NavLink.defaultProps = {
+  path: '',
+  name: '',
+  onClose: () => {}
 }

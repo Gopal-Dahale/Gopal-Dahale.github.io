@@ -1,4 +1,5 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import {
   Flex,
   Avatar,
@@ -6,15 +7,18 @@ import {
   Text,
   Badge,
   Stack,
-  Link,
+  Button,
   UnorderedList,
   ListItem,
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+
+// Custom Components
 import { MotionBox, MotionFlex } from '../ui/motion'
 import Header from '../layout/header'
 
+// Constants
 const ANIMATION_DURATION = 0.5
 const ORANGE = '#ff9400'
 
@@ -62,23 +66,23 @@ const Home = () => (
           Hello!
         </Header>
         <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-          I'm&nbsp;
+          I&apos;m&nbsp;
           <Box as="strong" fontWeight="600">
             Gopal,&nbsp;
           </Box>
           <Box as="span">a student who enjoys making&nbsp;</Box>
           <Box as="span">Full Stack projects with&nbsp;</Box>
           <Box as="span">a blend of Machine Learning 🚀.&nbsp;</Box>
-          <Box as="div"> I'm focused on developing stuff that can influence&nbsp;</Box>
-          <Box as="span"> people, and&nbsp;</Box>
-          <Box as="span"> I'm constantly seeking work opportunities&nbsp;</Box>
-          <Box as="span">with tech companies&nbsp;</Box>
-          <Box as="span"> on such projects 👨‍💻.&nbsp;</Box>
+          <Box as="div">I&apos;m focused on developing stuff that can influence&nbsp;</Box>
+          <Box as="span">people, and&nbsp;</Box>
+          <Box as="span">I&apos;m constantly seeking work opportunities&nbsp;</Box>
+          <Box as="span">with tech companies&nbsp;</Box>
+          <Box as="span">on such projects 👨‍💻.&nbsp;</Box>
           <Box as="span" whiteSpace="nowrap" />
         </Box>
         <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-          This place is my online backyard 🏡, where I share what I've learnt and the projects I
-          made. 😃
+          This place is my online backyard 🏡, where I share what I&apos;ve learnt and the projects
+          I made. 😃
         </Box>
       </MotionFlex>
     </Flex>
@@ -115,33 +119,41 @@ const Home = () => (
           <UnorderedList textAlign="left" paddingLeft={5} m={0}>
             <ListItem>
               <NextLink href="/open-source" passHref>
-                <Link>
+                <Button _hover={{ color: 'teal' }} variant="link">
                   Live/Local Github Repos
                   <Badge ml="1" colorScheme="green">
                     New
                   </Badge>
-                </Link>
+                </Button>
               </NextLink>
             </ListItem>
             <ListItem>
               <NextLink href="/about" passHref>
-                <Link>Work Experience</Link>
+                <Button _hover={{ color: 'teal' }} variant="link">
+                  Work Experience
+                </Button>
               </NextLink>
             </ListItem>
             <ListItem>
               <NextLink
                 href="https://drive.google.com/file/d/1vfSivLbATuVK2lxbczEts8hRcBIrafWO/view?usp=sharing"
                 passHref>
-                <Link>Resume</Link>
+                <Button _hover={{ color: 'teal' }} variant="link">
+                  Resume
+                </Button>
               </NextLink>
             </ListItem>
             <ListItem>
               <NextLink href="https://jovian.ai/dahalegopal27" passHref>
-                <Link>Jovian</Link>
+                <Button _hover={{ color: 'teal' }} variant="link">
+                  Jovian
+                </Button>
               </NextLink>
               &nbsp;and&nbsp;
               <NextLink href="https://www.kaggle.com/gopalrameshdahale" passHref>
-                <Link>Kaggle</Link>
+                <Button _hover={{ color: 'teal' }} variant="link">
+                  Kaggle
+                </Button>
               </NextLink>
               &nbsp;Profile
             </ListItem>

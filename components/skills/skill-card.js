@@ -13,11 +13,14 @@ import {
 import { usePalette } from 'react-palette'
 import NextLink from 'next/link'
 import PropTypes from 'prop-types'
+
+// Custom Components
 import { MotionBox } from '../ui/motion'
 import { item } from '../ui/page-transitions'
 
 /* ------------------------ Component ------------------------ */
-const SkillCard = ({ name, image, link, description }) => {
+const SkillCard = (props) => {
+  const { name, image, link, description } = props
   const { data, loading } = usePalette(image)
 
   return (
@@ -74,6 +77,21 @@ const SkillCard = ({ name, image, link, description }) => {
       </MotionBox>
     </MotionBox>
   )
+}
+
+/* ------------------------ PropTypes ------------------------ */
+SkillCard.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.string,
+  link: PropTypes.string,
+  description: PropTypes.string
+}
+
+SkillCard.defaultProps = {
+  name: '',
+  image: '',
+  link: '',
+  description: ''
 }
 
 export default SkillCard

@@ -14,11 +14,15 @@ import {
   useColorModeValue,
   SimpleGrid
 } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
+
+// Icons
 import { FaRobot } from 'react-icons/fa'
-import { AiTwotoneThunderbolt, AiOutlineCloudServer } from 'react-icons/ai'
+import { AiTwotoneThunderbolt } from 'react-icons/ai'
 import { BiDesktop } from 'react-icons/bi'
 import { GiSpiderWeb } from 'react-icons/gi'
-import PropTypes from 'prop-types'
+
+// Custom Components
 import Section from '../components/skills/section'
 import SkillCard from '../components/skills/skill-card'
 import { skillsArray } from '../data/data'
@@ -36,7 +40,6 @@ const TechStack = ({ skills }) => {
   }, [])
 
   const filterSkills = (tab) => {
-    console.log(skills.filter((skill) => skill.type === tab))
     if (tab.length) setSkillsList(skills.filter((skill) => skill.type === tab))
     else setSkillsList(skills)
   }
@@ -199,6 +202,15 @@ export function getStaticProps() {
       skills: skillsArray
     }
   }
+}
+
+/* ------------------------ PropTypes ------------------------ */
+TechStack.propTypes = {
+  skills: PropTypes.array
+}
+
+TechStack.defaultProps = {
+  skills: []
 }
 
 export default TechStack

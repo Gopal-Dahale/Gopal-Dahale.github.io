@@ -1,4 +1,5 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import { Stack, IconButton, Link, Box, Text, useColorModeValue, Flex } from '@chakra-ui/react'
 import siteConfig from '../../configs/site-config'
 

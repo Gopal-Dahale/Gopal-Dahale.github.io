@@ -1,11 +1,16 @@
 /* ------------------------ Imports ------------------------ */
 import * as React from 'react'
-import { FiPackage, FiHome, FiEdit2, FiUsers, FiBarChart2 } from 'react-icons/fi'
+import { VStack, Heading, Box, Link } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import PropTypes from 'prop-types'
+
+// Icons
+import { FiBarChart2 } from 'react-icons/fi'
 import { SiQwiklabs, SiHackerrank, SiIbm, SiKotlin, SiCodechef } from 'react-icons/si'
 import { FaFreeCodeCamp } from 'react-icons/fa'
-import { VStack, Heading, Box, Link, LinkProps } from '@chakra-ui/react'
-import NextLink from 'next/link'
-import { TimelineItem } from './Timeline'
+
+// Custom Components
+import TimelineItem from './Timeline'
 import { PageSlideFade } from '../ui/page-transitions'
 import Header from '../layout/header'
 
@@ -134,5 +139,18 @@ const Achievements = () => (
     </VStack>
   </PageSlideFade>
 )
+
+/* ------------------------ PropTypes ------------------------ */
+ExternalLink.propTypes = {
+  url: PropTypes.string,
+  linkProps: PropTypes.object,
+  text: PropTypes.string
+}
+
+ExternalLink.defaultProps = {
+  url: '',
+  linkProps: {},
+  text: ''
+}
 
 export default Achievements

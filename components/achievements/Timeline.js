@@ -1,17 +1,13 @@
 /* ------------------------ Imports ------------------------ */
 import React from 'react'
 import { Box, Circle, Flex, useColorModeValue } from '@chakra-ui/react'
-import { FiCheckCircle } from 'react-icons/fi'
 import PropTypes from 'prop-types'
 
+// Icons
+import { FiCheckCircle } from 'react-icons/fi'
+
 /* ------------------------ Component ------------------------ */
-export const TimelineItem = ({
-  icon = FiCheckCircle,
-  boxProps = {},
-  skipTrail = false,
-  children,
-  ...props
-}) => {
+const TimelineItem = ({ icon, boxProps, skipTrail, children, ...props }) => {
   const color = useColorModeValue('gray.700', 'gray.500')
   return (
     <Flex minH={20} {...props}>
@@ -31,3 +27,20 @@ export const TimelineItem = ({
     </Flex>
   )
 }
+
+/* ------------------------ PropTypes ------------------------ */
+TimelineItem.propTypes = {
+  icon: PropTypes.any,
+  boxProps: PropTypes.object,
+  skipTrail: PropTypes.bool,
+  children: PropTypes.elementType
+}
+
+TimelineItem.defaultProps = {
+  icon: FiCheckCircle,
+  boxProps: {},
+  skipTrail: false,
+  children: {}
+}
+
+export default TimelineItem

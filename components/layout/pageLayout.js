@@ -1,5 +1,5 @@
 /* ------------------------ Imports ------------------------ */
-import React, { Fragment, ReactNode } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
 import Meta from './meta'
@@ -24,5 +24,20 @@ const PageLayout = ({ children, title, description, keywords }) => (
     </motion.main>
   </>
 )
+
+/* ------------------------ PropTypes ------------------------ */
+PageLayout.propTypes = {
+  children: PropTypes.elementType,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  keywords: PropTypes.string
+}
+
+PageLayout.defaultProps = {
+  children: {},
+  title: '',
+  description: '',
+  keywords: ''
+}
 
 export default PageLayout

@@ -1,5 +1,8 @@
 /* ------------------------ Imports ------------------------ */
-import { FaGithub, FaLinkedin, FaQuora } from 'react-icons/fa'
+import React from 'react'
+
+// Icons
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiCodechef, SiHackerrank, SiLeetcode } from 'react-icons/si'
 import { FiMail } from 'react-icons/fi'
 

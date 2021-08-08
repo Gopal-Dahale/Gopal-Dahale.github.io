@@ -1,4 +1,7 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
+
+// Custom Components
 import Home from '../components/home-page/home'
 import PageLayout from '../components/layout/pageLayout'
 

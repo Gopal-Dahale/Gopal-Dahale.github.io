@@ -2,7 +2,7 @@
 import React from 'react'
 import { Center } from '@chakra-ui/react'
 import PropTypes from 'prop-types'
-import Container from './container'
+import { Container } from './container'
 
 /* ------------------------ Component ------------------------ */
 const Section = (props) => {
@@ -12,6 +12,17 @@ const Section = (props) => {
       {full ? children : <Container>{children}</Container>}
     </Center>
   )
+}
+
+/* ------------------------ PropTypes ------------------------ */
+Section.propTypes = {
+  full: PropTypes.bool,
+  children: PropTypes.elementType
+}
+
+Section.defaultProps = {
+  full: false,
+  children: {}
 }
 
 export default Section

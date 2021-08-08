@@ -1,4 +1,7 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
+
+// Custom Components
 import Achievements from '../components/achievements/achievements'
 import PageLayout from '../components/layout/pageLayout'
 

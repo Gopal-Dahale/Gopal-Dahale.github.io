@@ -105,7 +105,7 @@ const Card = (props) => {
 }
 
 /* ------------------------ Container ------------------------ */
-const About = ({ companies, institutes }) => {
+const About = () => {
   const { colorMode } = useColorMode()
 
   return (
@@ -179,6 +179,29 @@ export function getStaticProps() {
       institutes
     }
   }
+}
+
+/* ------------------------ PropTypes ------------------------ */
+Card.propTypes = {
+  title: PropTypes.string,
+  role: PropTypes.string,
+  skills: PropTypes.array,
+  period: PropTypes.string,
+  logo: PropTypes.string,
+  link: PropTypes.string,
+  colorMode: PropTypes.string,
+  alt: PropTypes.string
+}
+
+Card.defaultProps = {
+  title: '',
+  role: '',
+  skills: [],
+  period: '',
+  logo: '',
+  link: '',
+  colorMode: '',
+  alt: ''
 }
 
 export default About
