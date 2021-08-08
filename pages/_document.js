@@ -3,6 +3,7 @@ import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { GA_TRACKING_ID } from '../lib/gtag'
 
+/* ------------------------ Container ------------------------ */
 class MyDocument extends Document {
   render() {
     return (

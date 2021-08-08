@@ -26,6 +26,7 @@ import { MotionBox } from '../components/ui/motion'
 import { container, PageSlideFade } from '../components/ui/page-transitions'
 import PageLayout from '../components/layout/pageLayout'
 
+/* ------------------------ Container ------------------------ */
 const TechStack = ({ skills }) => {
   const [skillsList, setSkillsList] = useState([])
 

@@ -1,6 +1,7 @@
 /* ------------------------ Imports ------------------------ */
 import Head from 'next/head'
 
+/* ------------------------ Component ------------------------ */
 const Meta = ({ title, keywords, description }) => (
   <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />

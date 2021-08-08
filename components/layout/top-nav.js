@@ -50,6 +50,7 @@ const NavLink = (props) => {
   )
 }
 
+/* ------------------------ Component ------------------------ */
 export default function TopNav() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 

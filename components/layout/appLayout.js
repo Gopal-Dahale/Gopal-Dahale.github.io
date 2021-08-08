@@ -4,6 +4,7 @@ import { Box } from '@chakra-ui/react'
 import TopNav from './top-nav'
 import Footer from './footer'
 
+/* ------------------------ Component ------------------------ */
 function AppLayout(props) {
   return (
     <>

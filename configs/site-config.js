@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaQuora } from 'react-icons/fa'
 import { SiCodechef, SiHackerrank, SiLeetcode } from 'react-icons/si'
 import { FiMail } from 'react-icons/fi'
 
+/* ------------------------ Config ------------------------ */
 const siteConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} Muhammad Ahmad. All Rights Reserved.`,
   author: {

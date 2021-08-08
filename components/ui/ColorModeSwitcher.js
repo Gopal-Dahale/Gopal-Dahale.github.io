@@ -4,6 +4,7 @@ import useSound from 'use-sound'
 import { AnimatePresence } from 'framer-motion'
 import { MotionBox } from './motion'
 
+/* ------------------------ Component ------------------------ */
 export const ColorModeSwitcher = (props) => {
   const { toggleColorMode } = useColorMode()
   const mode = useColorModeValue('dark', 'light')

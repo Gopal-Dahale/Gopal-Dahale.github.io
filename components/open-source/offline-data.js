@@ -7,6 +7,7 @@ import { PageSlideFade, StaggerChildren } from '../ui/page-transitions'
 import RepositoryCard from './offline-data-card'
 import { MotionBox } from '../ui/motion'
 
+/* ------------------------ Component ------------------------ */
 const OfflineData = ({ repositories }) => (
   // const {
   //   loading,

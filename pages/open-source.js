@@ -24,6 +24,7 @@ const iconProps = {
   isRound: true
 }
 
+/* ------------------------ Container ------------------------ */
 const RepositoriesList = ({ repositories }) => (
   <PageLayout title="Open-source" keywords="A list of open source projects">
     <PageSlideFade>

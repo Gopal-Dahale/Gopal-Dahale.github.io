@@ -8,6 +8,7 @@ const iconProps = {
   isRound: true
 }
 
+/* ------------------------ Component ------------------------ */
 const Footer = () => (
   <Stack
     as="footer"

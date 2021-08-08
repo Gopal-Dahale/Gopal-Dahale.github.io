@@ -2,6 +2,7 @@
 import { Box, Flex, Image, forwardRef } from '@chakra-ui/react'
 import { motion, isValidMotionProp } from 'framer-motion'
 
+/* ------------------------ Component ------------------------ */
 export const MotionBox = motion(
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
@@ -12,6 +13,7 @@ export const MotionBox = motion(
   })
 )
 
+/* ------------------------ Component ------------------------ */
 export const MotionFlex = motion(
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
@@ -22,6 +24,7 @@ export const MotionFlex = motion(
   })
 )
 
+/* ------------------------ Component ------------------------ */
 export const MotionImage = motion(
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(

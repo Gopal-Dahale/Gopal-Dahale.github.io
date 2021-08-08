@@ -2,7 +2,7 @@
 import { css, Global } from '@emotion/react'
 import { useColorMode, theme } from '@chakra-ui/react'
 
-// import { theme } from "./theme";
+/* ------------------------ Themes ------------------------ */
 
 const prismBaseTheme = css`
   .article {

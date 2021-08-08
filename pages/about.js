@@ -98,6 +98,7 @@ const Card = (props) => {
   )
 }
 
+/* ------------------------ Container ------------------------ */
 const About = ({ companies, institutes }) => {
   const { colorMode } = useColorMode()
 

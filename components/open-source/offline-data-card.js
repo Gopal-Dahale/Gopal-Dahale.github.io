@@ -31,6 +31,7 @@ import { MotionBox } from '../ui/motion'
 import { CardTransition } from '../ui/page-transitions'
 import LazyImage from '../ui/lazy-image'
 
+/* ------------------------ Component ------------------------ */
 const RepositoryCard = (props) => {
   const { title, cover, blurHash, technologies, url, live } = props
   const { get } = useFetch('https://api.github.com')

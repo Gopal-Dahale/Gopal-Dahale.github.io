@@ -15,6 +15,7 @@ import NextLink from 'next/link'
 import { MotionBox } from '../ui/motion'
 import { item } from '../ui/page-transitions'
 
+/* ------------------------ Component ------------------------ */
 const SkillCard = ({ name, image, link, description }) => {
   const { data, loading } = usePalette(image)
 

@@ -2,6 +2,7 @@
 import { extendTheme } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
 
+/* ------------------------ Component ------------------------ */
 export const theme = extendTheme({
   // fonts: {
   //   heading: "'Red Hat Display', sans-serif",

@@ -2,6 +2,7 @@
 import { Box } from '@chakra-ui/react'
 import UnderlinedText from '../ui/underlined-text'
 
+/* ------------------------ Component ------------------------ */
 const Header = ({ children, underlineColor, emoji, ...props }) => (
   <Box
     as="h1"

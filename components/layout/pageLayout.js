@@ -9,6 +9,7 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 }
 }
 
+/* ------------------------ Component ------------------------ */
 const PageLayout = ({ children, title, description, keywords }) => (
   <>
     <Meta title={title} description={description} keywords={keywords} />

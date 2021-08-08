@@ -17,6 +17,7 @@ const ExternalLink = ({ url, linkProps, text, ...props }) => (
   </NextLink>
 )
 
+/* ------------------------ Component ------------------------ */
 const Achievements = () => (
   <PageSlideFade>
     <Box align="start" mb={6}>

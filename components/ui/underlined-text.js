@@ -2,6 +2,7 @@
 import { PropsWithChildren } from 'react'
 import { Box } from '@chakra-ui/react'
 
+/* ------------------------ Component ------------------------ */
 const UnderlinedText = (props) => (
   <Box as="span" display="inline-block" position="relative">
     {props.children}
