@@ -1,5 +1,12 @@
 const repositories = [
   {
+    title: 'Playstore Network Analysis',
+    cover: 'assets/images/repositories/playstore.png',
+    technologies: ['Python', 'Jupyter', 'Javascript'],
+    url: 'https://github.com/Gopal-Dahale/PlayStore',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
+  {
     title: 'Distribution & Requirement of Medical Resources for COVID',
     cover: 'assets/images/repositories/covid_project.png',
     technologies: ['Python', 'Jupyter'],
