@@ -183,20 +183,21 @@ export const theme = extendTheme({
 })
 
 export const getTagColor = (type) => {
-  type = type.toLowerCase()
-  if (type === 'rails' || type === 'ruby') {
+  const newType = type.toLowerCase()
+  if (newType === 'rails' || newType === 'ruby') {
     return 'red'
   }
-  if (type === 'react') {
+  if (newType === 'react') {
     return 'cyan'
   }
-  if (type === 'javascript') {
+  if (newType === 'javascript') {
     return 'yellow'
   }
-  if (type === 'typescript' || type === 'tailwindcss') {
+  if (newType === 'typescript' || newType === 'tailwindcss') {
     return 'blue'
   }
-  if (type === 'chakraui' || type === 'css') {
+  if (newType === 'chakraui' || newType === 'css') {
     return 'teal'
   }
+  return 'teal'
 }
