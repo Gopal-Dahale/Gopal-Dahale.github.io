@@ -3,6 +3,7 @@ import * as React from 'react'
 import ProgressiveImage from 'react-progressive-image'
 import { BlurhashCanvas } from 'react-blurhash'
 import { Image } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
 
 /* ------------------------ Component ------------------------ */
 const LazyImage = (props) => {

@@ -1,6 +1,7 @@
 /* ------------------------ Imports ------------------------ */
 import { PropsWithChildren } from 'react'
 import { Box } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
 
 /* ------------------------ Component ------------------------ */
 const UnderlinedText = (props) => (

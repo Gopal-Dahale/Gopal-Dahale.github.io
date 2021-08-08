@@ -2,6 +2,7 @@
 import React from 'react'
 import { Box, Circle, Flex, useColorModeValue } from '@chakra-ui/react'
 import { FiCheckCircle } from 'react-icons/fi'
+import PropTypes from 'prop-types'
 
 /* ------------------------ Component ------------------------ */
 export const TimelineItem = ({

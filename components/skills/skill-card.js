@@ -12,6 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { usePalette } from 'react-palette'
 import NextLink from 'next/link'
+import PropTypes from 'prop-types'
 import { MotionBox } from '../ui/motion'
 import { item } from '../ui/page-transitions'
 

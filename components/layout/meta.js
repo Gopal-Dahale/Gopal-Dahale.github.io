@@ -1,5 +1,6 @@
 /* ------------------------ Imports ------------------------ */
 import Head from 'next/head'
+import PropTypes from 'prop-types'
 
 /* ------------------------ Component ------------------------ */
 const Meta = ({ title, keywords, description }) => (

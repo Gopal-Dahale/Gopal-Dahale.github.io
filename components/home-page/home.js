@@ -19,7 +19,7 @@ const ANIMATION_DURATION = 0.5
 const ORANGE = '#ff9400'
 
 /* ------------------------ Component ------------------------ */
-const Home = ({ projects }) => (
+const Home = () => (
   <Flex direction="column" align="center">
     <Flex direction={['column', 'column', 'row']}>
       <MotionBox

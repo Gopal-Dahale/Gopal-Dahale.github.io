@@ -1,4 +1,5 @@
 /* ------------------------ Imports ------------------------ */
+import React from 'react'
 import {
   Box,
   Stack,
@@ -8,18 +9,23 @@ import {
   Text,
   Tag,
   Image,
-  Link,
   useColorMode,
   useColorModeValue
 } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
+
+// Icons
 import { FaGraduationCap } from 'react-icons/fa'
 import { BsFillBriefcaseFill } from 'react-icons/bs'
+
+// Custom Components
 import { PageSlideFade, StaggerChildren, CardTransition } from '../components/ui/page-transitions'
 import { MotionBox } from '../components/ui/motion'
 import { companies, institutes } from '../data/data'
 import Header from '../components/layout/header'
 import PageLayout from '../components/layout/pageLayout'
 
+// Constants
 const TURQUOISE = '#06b6d4'
 
 const Card = (props) => {

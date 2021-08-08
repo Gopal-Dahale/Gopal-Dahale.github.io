@@ -10,6 +10,7 @@ import {
   Skeleton
 } from '@chakra-ui/react'
 import useSound from 'use-sound'
+import PropTypes from 'prop-types'
 import { PageSlideFade } from '../components/ui/page-transitions'
 import Header from '../components/layout/header'
 import OfflineData from '../components/open-source/offline-data'

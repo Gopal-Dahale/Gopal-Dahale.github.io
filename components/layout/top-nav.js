@@ -14,6 +14,7 @@ import {
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import NextLink from 'next/link'
+import PropTypes from 'prop-types'
 import { ColorModeSwitcher } from '../ui/ColorModeSwitcher'
 
 const webLinks = [

@@ -1,6 +1,7 @@
 /* ------------------------ Imports ------------------------ */
 import React from 'react'
 import { Center } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
 import Container from './container'
 
 /* ------------------------ Component ------------------------ */

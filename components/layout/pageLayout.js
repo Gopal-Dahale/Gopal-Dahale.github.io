@@ -1,6 +1,7 @@
 /* ------------------------ Imports ------------------------ */
 import React, { Fragment, ReactNode } from 'react'
 import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 import Meta from './meta'
 
 const variants = {

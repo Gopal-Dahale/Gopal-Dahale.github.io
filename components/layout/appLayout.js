@@ -1,6 +1,7 @@
 /* ------------------------ Imports ------------------------ */
 import { Fragment } from 'react'
 import { Box } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
 import TopNav from './top-nav'
 import Footer from './footer'
 

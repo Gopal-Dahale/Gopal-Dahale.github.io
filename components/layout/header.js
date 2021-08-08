@@ -1,5 +1,6 @@
 /* ------------------------ Imports ------------------------ */
 import { Box } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
 import UnderlinedText from '../ui/underlined-text'
 
 /* ------------------------ Component ------------------------ */
