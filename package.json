@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pretty": "prettier --config ./.prettierrc.js --write \"components/**/*.js\" \"pages/**/*.js\" \"configs/**/*.js\" \"data/**/*.js\""
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.3",
