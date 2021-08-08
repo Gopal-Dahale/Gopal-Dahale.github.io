@@ -18,15 +18,6 @@ const ExternalLink = ({ url, linkProps, text, ...props }) => {
   );
 };
 
-const InternalLink = ({ url, linkProps, text, ...props }) => {
-  return (
-    <NextLink href={url} passHref>
-      <Link {...linkProps} {...props}>
-        {text}
-      </Link>
-    </NextLink>
-  );
-};
 const Achievements = () => {
   return (
     <PageSlideFade>

@@ -12,7 +12,6 @@ import {
 } from '@chakra-ui/react';
 import { MotionBox, MotionFlex } from '../ui/motion';
 import Header from '../layout/header';
-import Projects from './projects';
 import NextLink from 'next/link';
 
 const ANIMATION_DURATION = 0.5;
@@ -62,20 +61,18 @@ const Home = ({ projects }) => {
             Hello!
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-            I'm{' '}
+            I'm&nbsp;
             <Box as="strong" fontWeight="600">
-              Gopal,
-            </Box>{' '}
-            &apos;m a student who enjoys making Full Stack projects with{' '}
-            <Box as="span" whiteSpace="nowrap">
-              a blend of Machine Learning 🚀. I'm focused on developing stuff that
-            </Box>{' '}
-            <Box as="span" whiteSpace="nowrap">
-              that can influence people, and I'm constantly seeking work &nbsp;
+              Gopal,&nbsp;
             </Box>
-            <Box as="span" whiteSpace="nowrap">
-              opportunities with tech companies on such projects 👨‍💻.
-            </Box>
+            <Box as="span">a student who enjoys making&nbsp;</Box>
+            <Box as="span">Full Stack projects with&nbsp;</Box>
+            <Box as="span">a blend of Machine Learning 🚀.&nbsp;</Box>
+            <Box as="div"> I'm focused on developing stuff that can influence&nbsp;</Box>
+            <Box as="span"> people, and&nbsp;</Box>
+            <Box as="span"> I'm constantly seeking work opportunities&nbsp;</Box>
+            <Box as="span">with tech companies&nbsp;</Box>
+            <Box as="span"> on such projects 👨‍💻.&nbsp;</Box>
             <Box as="span" whiteSpace="nowrap"></Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">

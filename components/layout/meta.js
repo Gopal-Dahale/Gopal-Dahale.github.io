@@ -7,16 +7,15 @@ const Meta = ({ title, keywords, description }) => {
       <meta charSet="utf-8" />
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
-      {/* <link rel='icon' href='/favicon.ico' /> */}
       <title>{title}</title>
     </Head>
   );
 };
 
 Meta.defaultProps = {
-  title: 'Muhammad Ahmad - Full Stack Developer',
-  keywords: 'web development, programming, web design',
-  description: 'Software Engineer. Lover of web and opensource.'
+  title: 'Gopal Dahale - Full Stack Developer/ Machine Learning Developer',
+  keywords: 'Full Stack Development, Machine Learning, Deep Learning, Programming',
+  description: 'Software Engineer. Full Stack Developer. Machine Learning.'
 };
 
 export default Meta;

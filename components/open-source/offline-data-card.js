@@ -148,11 +148,11 @@ const RepositoryCard = (props) => {
                 bg={useColorModeValue('white', 'gray.900')}>
                 <Flex justifyContent={'space-between'} width="100%">
                   <Tooltip hasArrow label="Github link" placement="top">
-                    <HStack>
+                    <HStack maxWidth="80%">
                       <Icon as={FiGithub} boxSize="0.9em" mt={'1px'} />
                       <Text
                         fontSize="sm"
-                        noOfLines={1}
+                        noOfLines={2}
                         fontWeight="600"
                         align="left"
                         onClick={(e) => handleLinkClick(e, url)}>
