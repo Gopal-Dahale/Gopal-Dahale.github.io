@@ -94,7 +94,7 @@ const Achievements = () => (
             Completed Responsive Web Design Developer Certification from
             <ExternalLink
               color="blue.200"
-              url="https://www.freecodecamp.org/certification/fccdcf64cea-ae73-4db1-8f4b-2f30b4fa70bdg/responsive-web-design"
+              url="https://www.freecodecamp.org/certification/gopald27/responsive-web-design"
               text=" freeCodeCamp"
               target="_blank"
             />
