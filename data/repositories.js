@@ -23,9 +23,17 @@ const repositories = [
   {
     title: 'Digit Recognition Visualiser',
     cover: 'assets/images/repositories/digit.png',
-    technologies: ['Python', 'Jupyter', 'Heroku'],
+    technologies: ['Python', 'Tensorflow', 'Heroku'],
     url: 'https://github.com/Gopal-Dahale/Digit-recognition-visualiser-NN',
     live: 'https://digit-recognition-visualizer.herokuapp.com/',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
+  {
+    title: 'Detecting COVID with X-rays',
+    cover: 'assets/images/repositories/covidxray.jpg',
+    technologies: ['Python', 'Pytorch', 'Streamlit'],
+    url: 'https://github.com/Gopal-Dahale/Detecting-COVID-with-X-ray',
+    live: 'https://share.streamlit.io/gopal-dahale/detecting-covid-with-x-ray/main/chest_xray_app.py',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
