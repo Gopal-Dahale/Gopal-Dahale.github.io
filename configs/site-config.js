@@ -2,15 +2,13 @@
 import React from 'react'
 
 // Icons
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa'
 import { SiCodechef, SiHackerrank, SiLeetcode } from 'react-icons/si'
 import { FiMail } from 'react-icons/fi'
 
 /* ------------------------ Config ------------------------ */
 const siteConfig = {
-  copyright: `Copyright © ${new Date().getFullYear()} Muhammad Ahmad. All Rights Reserved.`,
   author: {
-    name: 'Muhammad Ahmad',
     accounts: [
       {
         url: 'https://github.com/Gopal-Dahale/',
@@ -23,6 +21,12 @@ const siteConfig = {
         label: 'LinkedIn Account',
         type: 'linkedin',
         icon: <FaLinkedin />
+      },
+      {
+        url: 'https://stackoverflow.com/users/16026443/gopal-dahale?tab=profile',
+        label: 'Stackoverflow Account',
+        type: 'orange',
+        icon: <FaStackOverflow />
       },
       {
         url: 'https://www.codechef.com/users/gopald27',

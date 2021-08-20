@@ -22,9 +22,9 @@ Meta.propTypes = {
 }
 
 Meta.defaultProps = {
-  title: 'Gopal Dahale - Full Stack Developer/ Machine Learning Developer',
-  keywords: 'Full Stack Development, Machine Learning, Deep Learning, Programming',
-  description: 'Software Engineer. Full Stack Developer. Machine Learning.'
+  title: '',
+  keywords: '',
+  description: ''
 }
 
 export default Meta
