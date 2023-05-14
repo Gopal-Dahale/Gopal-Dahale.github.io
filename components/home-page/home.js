@@ -66,23 +66,19 @@ const Home = () => (
           Hello!
         </Header>
         <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
+        <Box as="span">Welcome to my online backyard 🏡! &nbsp;</Box>
           I&apos;m&nbsp;
           <Box as="strong" fontWeight="600">
             Gopal,&nbsp;
           </Box>
-          <Box as="span">a student who enjoys making&nbsp;</Box>
-          <Box as="span">Full Stack projects with&nbsp;</Box>
-          <Box as="span">a blend of Machine Learning 🚀.&nbsp;</Box>
-          <Box as="div">I&apos;m focused on developing stuff that can influence&nbsp;</Box>
-          <Box as="span">people, and&nbsp;</Box>
-          <Box as="span">I&apos;m constantly seeking work opportunities&nbsp;</Box>
-          <Box as="span">with tech companies&nbsp;</Box>
-          <Box as="span">on such projects 👨‍💻.&nbsp;</Box>
+          <Box as="div">a passionate Quantum Machine Learning enthusiast with extensive experience in related research areas 🚀. </Box>
+          
+          <Box as="div">
+          I'm actively seeking opportunities to pursue a PhD 🎓 in Quantum Computing and Algorithms, Variational Methods, and Quantum Machine Learning.</Box>
           <Box as="span" whiteSpace="nowrap" />
         </Box>
         <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-          This place is my online backyard 🏡, where I share what I&apos;ve learnt and the projects
-          I made. 😃
+          Here, I share what I&apos;ve learned and the projects I've created in this exciting field 😃.
         </Box>
       </MotionFlex>
     </Flex>
