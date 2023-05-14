@@ -33,7 +33,8 @@ function MyApp(props) {
         <AnimatePresence
           exitBeforeEnter
           initial={false}
-          onExitComplete={() => window.scrollTo(0, 0)}>
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
           <Box key={router.route}>
             <Component {...pageProps} />
           </Box>

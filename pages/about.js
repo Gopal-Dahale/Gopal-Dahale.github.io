@@ -39,7 +39,8 @@ const Card = (props) => {
         _hover={{ shadow: 'lg' }}
         bg={useColorModeValue('white', 'gray.800')}
         position="relative"
-        rounded="md">
+        rounded="md"
+      >
         <Flex justifyContent="space-between">
           <Flex>
             <a target="_blank" href={link} rel="noreferrer">
@@ -65,7 +66,8 @@ const Card = (props) => {
                 mt={3}
                 isInline
                 alignItems="center"
-                display={['none', 'none', 'flex', 'flex']}>
+                display={['none', 'none', 'flex', 'flex']}
+              >
                 {skills.map((skill) => (
                   <Tag size="sm" padding="0 3px" key={skill}>
                     {skill}
@@ -92,7 +94,8 @@ const Card = (props) => {
           mt={3}
           isInline
           alignItems="center"
-          display={['flex', 'flex', 'none', 'none']}>
+          display={['flex', 'flex', 'none', 'none']}
+        >
           {skills.map((skill) => (
             <Tag size="sm" padding="0 3px" key={skill}>
               {skill}

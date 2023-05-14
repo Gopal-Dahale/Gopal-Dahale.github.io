@@ -1,4 +1,3 @@
-
 const currentRepositories = [
   {
     title: 'Measurement based ITE',
@@ -29,7 +28,7 @@ const currentRepositories = [
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
-    title: "Molecular Energy Landscapes of HEA for Carbon Capture",
+    title: 'Molecular Energy Landscapes of HEA for Carbon Capture',
     cover: 'assets/images/repositories/qhack23.png',
     technologies: ['Qiskit', 'PennyLane', 'VQE'],
     url: '',
@@ -41,7 +40,7 @@ const currentRepositories = [
     technologies: ['Cirq', 'TFQ', 'PennyLane', 'JAX'],
     url: '',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
-  },
+  }
 ]
 
 const btechRepositories = [

@@ -19,7 +19,8 @@ const PageLayout = ({ children, title, description, keywords }) => (
       animate="enter"
       exit="exit"
       variants={variants}
-      transition={{ type: 'linear' }}>
+      transition={{ type: 'linear' }}
+    >
       {children}
     </motion.main>
   </>

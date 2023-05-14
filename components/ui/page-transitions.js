@@ -96,7 +96,8 @@ export const StaggerChildren = ({ children }) => (
       opacity: 1,
       translateY: 0
     }}
-    variants={staggerVariants}>
+    variants={staggerVariants}
+  >
     {children}
   </MotionBox>
 )

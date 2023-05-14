@@ -78,14 +78,14 @@ const Home = () => (
             research areas 🚀.{' '}
           </Box>
           <Box as="div">
-            I'm actively seeking opportunities to pursue a PhD 🎓 in Quantum Computing and
+            I&apos;m actively seeking opportunities to pursue a PhD 🎓 in Quantum Computing and
             Algorithms, Variational Methods, and Quantum Machine Learning.
           </Box>
           <Box as="span" whiteSpace="nowrap" />
         </Box>
         <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-          Here, I share what I&apos;ve learned and the projects I've created in this exciting field
-          😃.
+          Here, I share what I&apos;ve learned and the projects I&apos;ve created in this exciting
+          field 😃.
         </Box>
       </MotionFlex>
     </Flex>

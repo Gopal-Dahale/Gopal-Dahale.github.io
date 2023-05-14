@@ -20,13 +20,15 @@ const Footer = () => (
     alignItems="center"
     w={['100%', '85%', '80%']}
     maxW={800}
-    mx="auto">
+    mx="auto"
+  >
     <Flex
       flexDirection={['column', 'column', 'row']}
       flexFlow={['column-reverse', 'column-reverse']}
       justifyContent={['center', 'space-between']}
       alignItems="center"
-      w="100%">
+      w="100%"
+    >
       <Text textAlign="center" fontSize="sm" color={useColorModeValue('gray.500', 'gray.200')}>
         &copy; {new Date().getFullYear()} Gopal Dahale{' '}
       </Text>

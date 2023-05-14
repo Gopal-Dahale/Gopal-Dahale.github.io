@@ -60,7 +60,8 @@ const TechStack = ({ skills }) => {
                 fontSize="xl"
                 color={useColorModeValue('gray.500', 'gray.200')}
                 maxW="lg"
-                textAlign="center">
+                textAlign="center"
+              >
                 This is a list of my favourite tools and technologies that I use frequently.
               </Text>
             </VStack>
@@ -91,7 +92,8 @@ const TechStack = ({ skills }) => {
                   }}
                   mr={2}
                   mt={2}
-                  onClick={() => filterSkills('quantum')}>
+                  onClick={() => filterSkills('quantum')}
+                >
                   <HStack spacing={1}>
                     <Icon as={FaAtom} />
                     <Text>Quantum Computing</Text>
@@ -106,7 +108,8 @@ const TechStack = ({ skills }) => {
                   }}
                   mr={2}
                   mt={2}
-                  onClick={() => filterSkills('ml')}>
+                  onClick={() => filterSkills('ml')}
+                >
                   <HStack spacing={1}>
                     <Icon as={FaRobot} />
                     <Text>Machine Learning for Hybrid Computation</Text>
@@ -121,7 +124,8 @@ const TechStack = ({ skills }) => {
                   }}
                   mr={2}
                   mt={2}
-                  onClick={() => filterSkills('language')}>
+                  onClick={() => filterSkills('language')}
+                >
                   <HStack spacing={1}>
                     <Icon as={BiCode} />
                     <Text>Programming Languages</Text>
@@ -136,7 +140,8 @@ const TechStack = ({ skills }) => {
                   }}
                   mr={2}
                   mt={2}
-                  onClick={() => filterSkills('editor')}>
+                  onClick={() => filterSkills('editor')}
+                >
                   <HStack spacing={1}>
                     <Icon as={MdNote} />
                     <Text>Editors</Text>

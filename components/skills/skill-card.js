@@ -38,14 +38,16 @@ const SkillCard = (props) => {
               textAlign="left"
               align="start"
               spacing={4}
-              _hover={{ shadow: 'md' }}>
+              _hover={{ shadow: 'md' }}
+            >
               <Box
                 rounded="lg"
                 p={2}
                 position="relative"
                 overflow="hidden"
                 lineHeight={0}
-                boxShadow="inset 0 0 1px 1px rgba(0, 0, 0, 0.015)">
+                boxShadow="inset 0 0 1px 1px rgba(0, 0, 0, 0.015)"
+              >
                 <Box
                   bg={data.lightVibrant}
                   position="absolute"

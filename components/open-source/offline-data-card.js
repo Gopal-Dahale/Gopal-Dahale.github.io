@@ -94,7 +94,8 @@ const RepositoryCard = (props) => {
           }}
           overflow="hidden"
           align="start"
-          spacing={0}>
+          spacing={0}
+        >
           <Box position="relative" w="100%">
             <MotionBox variants={thumbnailVariants}>
               <MotionBox whileHover="hover" variants={imageVariants} transition={transition}>
@@ -103,7 +104,8 @@ const RepositoryCard = (props) => {
                   maxW="400px"
                   w="100%"
                   borderBottomWidth="1px"
-                  borderColor={useColorModeValue('gray.100', 'gray.700')}>
+                  borderColor={useColorModeValue('gray.100', 'gray.700')}
+                >
                   <LazyImage src={cover} blurHash={blurHash} />
                 </AspectRatio>
               </MotionBox>
@@ -119,7 +121,8 @@ const RepositoryCard = (props) => {
                     noOfLines={1}
                     fontWeight="600"
                     align="left"
-                    onClick={(e) => handleLinkClick(e, url)}>
+                    onClick={(e) => handleLinkClick(e, url)}
+                  >
                     {title}
                   </Text>
                 </HStack>
@@ -151,7 +154,8 @@ const RepositoryCard = (props) => {
                 spacing={1}
                 align="start"
                 w="100%"
-                bg={useColorModeValue('white', 'gray.900')}>
+                bg={useColorModeValue('white', 'gray.900')}
+              >
                 <Flex justifyContent="space-between" width="100%">
                   <Tooltip hasArrow label="Github link" placement="top">
                     <HStack maxWidth="80%" cursor="pointer">
@@ -161,7 +165,8 @@ const RepositoryCard = (props) => {
                         noOfLines={2}
                         fontWeight="600"
                         align="left"
-                        onClick={(e) => handleLinkClick(e, url)}>
+                        onClick={(e) => handleLinkClick(e, url)}
+                      >
                         {title}
                       </Text>
                     </HStack>
@@ -176,7 +181,8 @@ const RepositoryCard = (props) => {
                       {forks && (
                         <Box
                           _hover={{ color: 'blue.500' }}
-                          onClick={(e) => handleLinkClick(e, url)}>
+                          onClick={(e) => handleLinkClick(e, url)}
+                        >
                           <Icon as={BiGitRepoForked} boxSize="0.9em" mt="1px" />
                           <Box as="span" ml="1" fontSize="sm">
                             {forks}
@@ -186,7 +192,8 @@ const RepositoryCard = (props) => {
                       {stars && (
                         <Box
                           _hover={{ color: 'blue.500' }}
-                          onClick={(e) => handleLinkClick(e, url)}>
+                          onClick={(e) => handleLinkClick(e, url)}
+                        >
                           <Icon as={BiStar} boxSize="0.9em" mt="1px" />
                           <Box as="span" ml="1" fontSize="sm">
                             {stars}
@@ -197,7 +204,8 @@ const RepositoryCard = (props) => {
                         <Tooltip hasArrow label="View Deployment" placement="top">
                           <Box
                             _hover={{ color: 'blue.500' }}
-                            onClick={(e) => handleLinkClick(e, live)}>
+                            onClick={(e) => handleLinkClick(e, live)}
+                          >
                             <Icon as={VscRocket} boxSize="0.9em" mt="1px" />
                           </Box>
                         </Tooltip>

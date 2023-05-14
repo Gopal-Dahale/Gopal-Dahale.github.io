@@ -48,7 +48,8 @@ const NavLink = (props) => {
         _activeLink={{
           color: link.color
         }}
-        onClick={() => onClose()}>
+        onClick={() => onClose()}
+      >
         {name}
       </Link>
     </NextLink>
@@ -67,14 +68,16 @@ export default function TopNav() {
         boxShadow="lg"
         position="fixed"
         width="100%"
-        zIndex="55">
+        zIndex="55"
+      >
         <Flex
           h={16}
           alignItems="center"
           justifyContent="space-between"
           w={['90%', '85%', '80%']}
           maxW={800}
-          mx="auto">
+          mx="auto"
+        >
           <IconButton
             size="md"
             icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
@@ -104,7 +107,8 @@ export default function TopNav() {
             pb={4}
             w={['100%', '100%', '80%']}
             maxW={800}
-            display={['inherit', 'inherit', 'none']}>
+            display={['inherit', 'inherit', 'none']}
+          >
             <Stack as="nav" spacing={4}>
               {webLinks.map((link, index) => (
                 <NavLink

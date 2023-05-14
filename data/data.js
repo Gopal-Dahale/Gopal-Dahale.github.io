@@ -1,9 +1,9 @@
 export const companies = [
   {
-    title: "Google Summer of Code with ML4SCI",
+    title: 'Google Summer of Code with ML4SCI',
     alt: 'GSoC logo',
     role: 'Open Source Contributor',
-    skills: [ 'PyTorch Geometric', 'PennyLane', 'JAX', 'Jraph'],
+    skills: ['PyTorch Geometric', 'PennyLane', 'JAX', 'Jraph'],
     period: 'May 2023 - Present',
     logo: 'assets/images/logos/gsoc.png',
     link: 'https://summerofcode.withgoogle.com/programs/2023/projects/sRqbxQyq'
@@ -21,7 +21,7 @@ export const companies = [
     title: 'Qiskit Advocate Mentorship Program Fall 22',
     alt: 'Qiskit logo',
     role: 'Open Source Contributor/Mentee',
-    skills: [ 'Tensor Networks' , 'Qiskit' , 'PyTorch' , 'QML'],
+    skills: ['Tensor Networks', 'Qiskit', 'PyTorch', 'QML'],
     period: 'Sept 2022 - Dec 2022',
     logo: 'assets/images/logos/qiskit.png',
     link: 'https://github.com/qiskit-advocate/qamp-fall-22'
@@ -30,16 +30,16 @@ export const companies = [
     title: 'ATONARP',
     alt: 'ATONARP logo',
     role: 'Data Scientist',
-    skills: ['PyQt' , 'Data Analysis' , 'Python' , 'Machine Learning'],
+    skills: ['PyQt', 'Data Analysis', 'Python', 'Machine Learning'],
     period: 'Sept 2022 - Nov 2022',
     logo: 'assets/images/logos/atonarp.jpeg',
     link: 'https://www.atonarp.com/'
   },
   {
-    title: "Google Summer of Code with ML4SCI",
+    title: 'Google Summer of Code with ML4SCI',
     alt: 'GSoC logo',
     role: 'Open Source Contributor',
-    skills: [ 'TFQ', 'Cirq', 'JAX', 'PennyLane', 'QML', 'cuQauntum'],
+    skills: ['TFQ', 'Cirq', 'JAX', 'PennyLane', 'QML', 'cuQauntum'],
     period: 'Jun 2022 - Sept 2022',
     logo: 'assets/images/logos/gsoc.png',
     link: 'https://summerofcode.withgoogle.com/archive/2022/projects/58Y5QOU4'
@@ -61,7 +61,7 @@ export const companies = [
     period: 'Dec 2020 - Jan 2021',
     logo: 'assets/images/logos/newzera.jpg',
     link: 'https://newzera.com/'
-  },
+  }
   // {
   //   title: 'GeeksforGeeks',
   //   alt: 'gfg logo image',
