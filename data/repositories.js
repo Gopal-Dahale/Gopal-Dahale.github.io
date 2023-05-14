@@ -1,29 +1,82 @@
-const repositories = [
+
+const current_repositories = [
+  {
+    title: 'Measurement based ITE',
+    cover: 'assets/images/repositories/osp23.png',
+    technologies: ['NumPy', 'ITE'],
+    url: '',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
+  {
+    title: 'Heisenberg model on Kagome lattice',
+    cover: 'assets/images/repositories/osp23.png',
+    technologies: ['Qiskit', 'VQE'],
+    url: 'https://github.com/Gopal-Dahale/heisenberg-xxx-osp-22',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
+  {
+    title: 'Qlimate',
+    cover: 'assets/images/repositories/qlimate.png',
+    technologies: ['Qiskit', 'PennyLane', 'VQE', 'DMET'],
+    url: '',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
+  {
+    title: 'Data re-uploading with QSVM',
+    cover: 'assets/images/repositories/qsvm.png',
+    technologies: ['PennyLane', 'JAX'],
+    url: '',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
+  {
+    title: "Molecular Energy Landscapes of HEA for Carbon Capture",
+    cover: 'assets/images/repositories/qhack23.png',
+    technologies: ['Qiskit', 'PennyLane', 'VQE'],
+    url: '',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
+  {
+    title: 'QCNNs for HEP Analysis at the LHC',
+    cover: 'assets/images/repositories/gsoc22.png',
+    technologies: ['Cirq', 'TFQ', 'PennyLane', 'JAX'],
+    url: '',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
+]
+
+const btech_repositories = [
+  {
+    title: 'Grover on Quantum Cryptanalysis',
+    cover: 'assets/images/repositories/grover_circuit_high_level.png',
+    technologies: ['Qiskit', 'LIGHTER-R', 'Python'],
+    url: 'https://github.com/Gopal-Dahale/QSKC-Grover',
+    blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
+  },
   {
     title: 'Playstore Network Analysis',
     cover: 'assets/images/repositories/playstore.png',
-    technologies: ['Python', 'Jupyter', 'Javascript'],
+    technologies: ['Javascript', 'NetworkX', 'Python'],
     url: 'https://github.com/Gopal-Dahale/PlayStore',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
     title: 'Distribution & Requirement of Medical Resources for COVID',
     cover: 'assets/images/repositories/covid_project.png',
-    technologies: ['Python', 'Jupyter'],
+    technologies: ['Scikit-learn', 'Data Analysis', 'Python'],
     url: 'https://github.com/Gopal-Dahale/Distribution-and-Requirement-of-Medical-Resources-for-Covid-19-and-Factors-Affecting-Hospitalization',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
     title: 'Auto Playlist Creation',
     cover: 'assets/images/repositories/auto_playlist_creation.png',
-    technologies: ['Python', 'Jupyter'],
+    technologies: ['Youtube API', 'Data Analysis', 'Python'],
     url: 'https://github.com/Gopal-Dahale/Automatic-Playlist-creation',
     blurHash: 'LMOWg4wIS$WBH?sAkCR*?^bcnNoy'
   },
   {
     title: 'Digit Recognition Visualiser',
     cover: 'assets/images/repositories/digit.png',
-    technologies: ['Python', 'Tensorflow', 'Heroku'],
+    technologies: ['TensorFlow', 'Heroku'],
     url: 'https://github.com/Gopal-Dahale/Digit-recognition-visualiser-NN',
     live: 'https://digit-recognition-visualizer.herokuapp.com/',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
@@ -31,7 +84,7 @@ const repositories = [
   {
     title: 'Detecting COVID with X-rays',
     cover: 'assets/images/repositories/covidxray.jpg',
-    technologies: ['Python', 'Pytorch', 'Streamlit'],
+    technologies: ['PyTorch', 'Streamlit'],
     url: 'https://github.com/Gopal-Dahale/Detecting-COVID-with-X-ray',
     live: 'https://share.streamlit.io/gopal-dahale/detecting-covid-with-x-ray/main/chest_xray_app.py',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
@@ -46,7 +99,7 @@ const repositories = [
   {
     title: 'COVID India Tracker',
     cover: 'assets/images/repositories/tracker.png',
-    technologies: ['Kotlin', 'Javascript'],
+    technologies: ['Android Studio', 'Kotlin', 'Javascript'],
     url: 'https://github.com/Gopal-Dahale/COVID19-India-Tracker',
     blurHash: 'L4S~x5xb~q$*~WR6MykCx^Vt4TtP'
   },
@@ -59,4 +112,4 @@ const repositories = [
   }
 ]
 
-export default repositories
+export { current_repositories, btech_repositories }
