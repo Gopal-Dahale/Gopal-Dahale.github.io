@@ -6,8 +6,12 @@ import PropTypes from 'prop-types'
 
 // Icons
 import { FiBarChart2 } from 'react-icons/fi'
-import { SiQwiklabs, SiHackerrank, SiIbm, SiKotlin, SiCodechef } from 'react-icons/si'
-import { FaFreeCodeCamp } from 'react-icons/fa'
+import { SiQwiklabs, SiHackerrank, SiIbm, SiKotlin, SiCodechef, SiQiskit } from 'react-icons/si'
+import { FaFreeCodeCamp, FaSun, FaCampground, FaBookOpen } from 'react-icons/fa'
+import {BsCodeSlash} from 'react-icons/bs'
+import { BiCodeCurly } from 'react-icons/bi'
+import { GiMolecule} from 'react-icons/gi'
+import { VscSourceControl } from 'react-icons/vsc'
 
 // Custom Components
 import TimelineItem from './Timeline'
@@ -22,6 +26,7 @@ const ExternalLink = ({ url, linkProps, text, ...props }) => (
   </NextLink>
 )
 
+
 /* ------------------------ Component ------------------------ */
 const Achievements = () => (
   <PageSlideFade>
@@ -31,6 +36,203 @@ const Achievements = () => (
       </Header>
     </Box>
     <VStack textAlign="start" align="start" mb={5}>
+
+    <Box>
+        <Heading fontSize="2xl" fontWeight="600" my={5}>
+          2023
+        </Heading>
+        <Box>
+
+        <TimelineItem icon={FaSun}>
+            Selected in the 
+            <ExternalLink
+              color="blue.200"
+              url=""
+              text=" Google Summer of Code 23 with ML4SCI"
+              target="_blank"
+            />
+          </TimelineItem>
+
+
+        <TimelineItem icon={VscSourceControl}>
+            Selected in the 
+            <ExternalLink
+              color="blue.200"
+              url=""
+              text=" Quantum Open Source Foundation Cohort 7"
+              target="_blank"
+            />
+          </TimelineItem>
+
+        <TimelineItem icon={GiMolecule}>
+            Runner-up in 
+            <ExternalLink
+              color="blue.200"
+              url="https://app.ekipa.de/challenges/deloitte-quantum-23/brief"
+              text=" Deloitte's Quantum Climate Challenge 23"
+              target="_blank"
+            />
+          </TimelineItem>
+
+        <TimelineItem icon={SiIbm}>
+            Succesfully completed
+            <ExternalLink
+              color="blue.200"
+              url="https://www.credly.com/badges/79ef7ec5-08c6-4cfa-8c35-d37286c018e2/public_url"
+              text=" Variational Algorithm Design "
+              target="_blank"
+            />
+            Module
+          </TimelineItem>
+
+          <TimelineItem icon={FaBookOpen}>
+            Succesfully completed Qubit by Qubit's
+            <ExternalLink
+              color="blue.200"
+              url="https://verified.sertifier.com/en/verify/54756615694912/"
+              text=" Introduction to Quantum Computing "
+              target="_blank"
+            />
+            course
+          </TimelineItem>
+
+
+          <TimelineItem icon={BiCodeCurly}>
+            Winner in QHack Open Hackathon 
+            <ExternalLink
+              color="blue.200"
+              url="https://drive.google.com/file/d/1RAAjDUDqbbrzIYPTJPdWUnUF0bOguV-g/view"
+              text=" Quantum Chemistry Challenge "
+              target="_blank"
+            />
+            and 
+            <ExternalLink
+              color="blue.200"
+              url="https://drive.google.com/file/d/1w9YmwXNT9fjFBVrl6r3sGSsagatQL9bJ/view"
+              text=" AWS Challenge"
+              target="_blank"
+            />
+          </TimelineItem>
+
+          
+        
+        <TimelineItem icon={BsCodeSlash}>
+            Secured 21 rank of 793 in 
+            <ExternalLink
+              color="blue.200"
+              url="https://qhack.ai/"
+              text=" QHack Coding Challenges"
+              target="_blank"
+            />
+          </TimelineItem>
+
+
+        <TimelineItem icon={SiQiskit}>
+            Quantum Explorers
+            <ExternalLink
+              color="blue.200"
+              url="https://drive.google.com/file/d/1xoeAxj4N4SMggAOZTtThcucI0boMDypI/view"
+              text=" Certificate of Quantum Excellence"
+              target="_blank"
+            />
+          </TimelineItem>
+
+          <TimelineItem icon={BsCodeSlash} skipTrail>
+            iQuHack
+            <ExternalLink
+              color="blue.200"
+              url="https://drive.google.com/file/d/1E6b1CosAnNUjJpQn9zYygjmb4th_kQ-b/view"
+              text=" successful submission "
+              target="_blank"
+            />
+            (IonQ Remote Challenge)
+          </TimelineItem>
+          
+          
+        </Box>
+      </Box>
+
+    <Box>
+        <Heading fontSize="2xl" fontWeight="600" my={5}>
+          2022
+        </Heading>
+        <Box>
+          <TimelineItem icon={FaCampground}>
+            Secured 19 rank out of 429 in
+            <ExternalLink
+              color="blue.200"
+              url="https://codecamp.xanadu.ai/"
+              text=" PennyLane Code Camp"
+              target="_blank"
+            />
+          </TimelineItem>
+          <TimelineItem icon={SiIbm}>
+            Mentee in 
+            <ExternalLink
+              color="blue.200"
+              url="https://www.credly.com/badges/753352aa-64c2-4cde-a85c-a61f68dbb976/public_url"
+              text=" Qiskit Advocate Mentorship Program Fall 22"
+              target="_blank"
+            />
+          </TimelineItem>
+          <TimelineItem icon={SiIbm}>
+            Advanced badge in 
+            <ExternalLink
+              color="blue.200"
+              url="https://www.credly.com/badges/97d76c09-1e5b-4446-8fd9-874f6c7e2d14/public_url"
+              text=" IBM Quantum Challenge Fall 2022 Achievement"
+              target="_blank"
+            />
+          </TimelineItem>
+          <TimelineItem icon={SiIbm}>
+            Successfully completed
+            <ExternalLink
+              color="blue.200"
+              url="https://www.credly.com/badges/5f68cecd-3cc4-4d01-8363-c9fa4b452331/public_url"
+              text=" Qiskit Global Summer School 22"
+              target="_blank"
+            />
+          </TimelineItem>
+          <TimelineItem icon={SiIbm}>
+            Became 
+            <ExternalLink
+              color="blue.200"
+              url="https://www.credly.com/badges/b2426e47-db32-49ef-bd24-40cb51ff637f/public_url"
+              text=" Qiskit Advocate"
+              target="_blank"
+            />
+          </TimelineItem>
+          <TimelineItem icon={SiIbm}>
+            Became 
+            <ExternalLink
+              color="blue.200"
+              url="https://www.credly.com/badges/3ae61f77-2fd0-419b-863f-1d0cd070bf13/public_url"
+              text=" IBM Certified Associate Developer - Quantum Computation using Qiskit v0.2X"
+              target="_blank"
+            />
+          </TimelineItem>
+          <TimelineItem icon={SiIbm}>
+            Earned
+            <ExternalLink
+              color="blue.200"
+              url="https://www.credly.com/badges/62cf82ba-cc6f-4e48-9598-ad6196c67580/public_url"
+              text=" IBM Quantum Spring Challenge "
+              target="_blank"
+            />
+            Badge
+          </TimelineItem>
+          <TimelineItem icon={FaSun} skipTrail>
+            Selected for
+            <ExternalLink
+              color="blue.200"
+              url="https://summerofcode.withgoogle.com/archive/2022/projects/0gbpQgKv"
+              text=" Google Summer of Code 22 with ML4SCI"
+              target="_blank"
+            />
+          </TimelineItem>
+        </Box>
+      </Box>
+
       <Box>
         <Heading fontSize="2xl" fontWeight="600" my={5}>
           2021
@@ -75,7 +277,7 @@ const Achievements = () => (
             Earned
             <ExternalLink
               color="blue.200"
-              url="https://www.credly.com/badges/db3418b1-9857-46bd-9663-4e5b68ac1552/linked_in"
+              url="https://www.credly.com/badges/db3418b1-9857-46bd-9663-4e5b68ac1552/public_url"
               text=" IBM Quantum Challenge "
               target="_blank"
             />
