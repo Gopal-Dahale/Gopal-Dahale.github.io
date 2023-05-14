@@ -40,7 +40,8 @@ const Home = () => (
           }
         }}
         m="auto"
-        mb={[16, 16, 'auto']}>
+        mb={[16, 16, 'auto']}
+      >
         <Avatar size="2xl" src="assets/images/user_icon.png" />
       </MotionBox>
       <MotionFlex
@@ -61,24 +62,30 @@ const Home = () => (
           transition: {
             duration: ANIMATION_DURATION
           }
-        }}>
+        }}
+      >
         <Header underlineColor={ORANGE} emoji="👋" mt={0}>
           Hello!
         </Header>
         <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-        <Box as="span">Welcome to my online backyard 🏡! &nbsp;</Box>
+          <Box as="span">Welcome to my online backyard 🏡! &nbsp;</Box>
           I&apos;m&nbsp;
           <Box as="strong" fontWeight="600">
             Gopal,&nbsp;
           </Box>
-          <Box as="div">a passionate Quantum Machine Learning enthusiast with extensive experience in related research areas 🚀. </Box>
-          
           <Box as="div">
-          I'm actively seeking opportunities to pursue a PhD 🎓 in Quantum Computing and Algorithms, Variational Methods, and Quantum Machine Learning.</Box>
+            a passionate Quantum Machine Learning enthusiast with extensive experience in related
+            research areas 🚀.{' '}
+          </Box>
+          <Box as="div">
+            I'm actively seeking opportunities to pursue a PhD 🎓 in Quantum Computing and
+            Algorithms, Variational Methods, and Quantum Machine Learning.
+          </Box>
           <Box as="span" whiteSpace="nowrap" />
         </Box>
         <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-          Here, I share what I&apos;ve learned and the projects I've created in this exciting field 😃.
+          Here, I share what I&apos;ve learned and the projects I've created in this exciting field
+          😃.
         </Box>
       </MotionFlex>
     </Flex>
@@ -95,7 +102,8 @@ const Home = () => (
           delay: ANIMATION_DURATION - 0.1,
           duration: ANIMATION_DURATION
         }
-      }}>
+      }}
+    >
       <Box mt={10}>
         <Stack
           mb={10}
@@ -108,7 +116,8 @@ const Home = () => (
           _hover={{ shadow: 'lg' }}
           backgroundColor={useColorModeValue('gray.100', '#1e2533')}
           rounded="sm"
-          fontSize="md">
+          fontSize="md"
+        >
           <Text textAlign="center" color="#53c8c4" fontWeight="bold">
             Highlights
           </Text>
@@ -133,7 +142,8 @@ const Home = () => (
             <ListItem>
               <NextLink
                 href="https://drive.google.com/file/d/1vfSivLbATuVK2lxbczEts8hRcBIrafWO/view?usp=sharing"
-                passHref>
+                passHref
+              >
                 <Button _hover={{ color: 'teal' }} variant="link">
                   Resume
                 </Button>

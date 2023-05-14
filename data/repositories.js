@@ -1,5 +1,5 @@
 
-const current_repositories = [
+const currentRepositories = [
   {
     title: 'Measurement based ITE',
     cover: 'assets/images/repositories/osp23.png',
@@ -44,7 +44,7 @@ const current_repositories = [
   },
 ]
 
-const btech_repositories = [
+const btechRepositories = [
   {
     title: 'Grover on Quantum Cryptanalysis',
     cover: 'assets/images/repositories/grover_circuit_high_level.png',
@@ -112,4 +112,4 @@ const btech_repositories = [
   }
 ]
 
-export { current_repositories, btech_repositories }
+export { currentRepositories, btechRepositories }

@@ -30,7 +30,6 @@ import { MotionBox } from '../components/ui/motion'
 import { container, PageSlideFade } from '../components/ui/page-transitions'
 import PageLayout from '../components/layout/pageLayout'
 
-
 /* ------------------------ Container ------------------------ */
 const TechStack = ({ skills }) => {
   const [skillsList, setSkillsList] = useState([])
@@ -38,8 +37,7 @@ const TechStack = ({ skills }) => {
   React.useEffect(() => {
     if (skillsList.length === 0) {
       setSkillsList(skills.filter((skill) => skill.type === 'quantum'))
-    }
-    else {
+    } else {
       setSkillsList(skills)
     }
   }, [])
