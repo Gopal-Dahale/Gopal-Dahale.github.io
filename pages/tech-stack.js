@@ -17,10 +17,9 @@ import {
 import PropTypes from 'prop-types'
 
 // Icons
-import { FaRobot } from 'react-icons/fa'
-import { AiTwotoneThunderbolt } from 'react-icons/ai'
-import { BiDesktop } from 'react-icons/bi'
-import { GiSpiderWeb } from 'react-icons/gi'
+import { FaAtom, FaRobot } from 'react-icons/fa'
+import { BiCode } from 'react-icons/bi'
+import { MdNote } from 'react-icons/md'
 
 // Custom Components
 import Section from '../components/skills/section'
@@ -31,12 +30,18 @@ import { MotionBox } from '../components/ui/motion'
 import { container, PageSlideFade } from '../components/ui/page-transitions'
 import PageLayout from '../components/layout/pageLayout'
 
+
 /* ------------------------ Container ------------------------ */
 const TechStack = ({ skills }) => {
   const [skillsList, setSkillsList] = useState([])
 
   React.useEffect(() => {
-    setSkillsList(skills)
+    if (skillsList.length === 0) {
+      setSkillsList(skills.filter((skill) => skill.type === 'quantum'))
+    }
+    else {
+      setSkillsList(skills)
+    }
   }, [])
 
   const filterSkills = (tab) => {
@@ -65,7 +70,7 @@ const TechStack = ({ skills }) => {
           <Section>
             <Tabs variant="soft-rounded" colorScheme="blue" align="center" w="100%">
               <TabList display="flex" flexWrap="wrap">
-                <Tab
+                {/* <Tab
                   bg={useColorModeValue('gray.100', 'gray.800')}
                   color={useColorModeValue('gray.600', 'gray.500')}
                   _selected={{
@@ -76,10 +81,9 @@ const TechStack = ({ skills }) => {
                   mt={2}
                   onClick={() => filterSkills('')}>
                   <HStack spacing={1}>
-                    <Icon as={AiTwotoneThunderbolt} />
                     <Text>All</Text>
                   </HStack>
-                </Tab>
+                </Tab> */}
                 <Tab
                   bg={useColorModeValue('gray.100', 'gray.800')}
                   color={useColorModeValue('gray.500', 'gray.500')}
@@ -89,10 +93,10 @@ const TechStack = ({ skills }) => {
                   }}
                   mr={2}
                   mt={2}
-                  onClick={() => filterSkills('development')}>
+                  onClick={() => filterSkills('quantum')}>
                   <HStack spacing={1}>
-                    <Icon as={BiDesktop} />
-                    <Text>Web Development</Text>
+                    <Icon as={FaAtom} />
+                    <Text>Quantum Computing</Text>
                   </HStack>
                 </Tab>
                 <Tab
@@ -104,10 +108,10 @@ const TechStack = ({ skills }) => {
                   }}
                   mr={2}
                   mt={2}
-                  onClick={() => filterSkills('design')}>
+                  onClick={() => filterSkills('ml')}>
                   <HStack spacing={1}>
-                    <Icon as={GiSpiderWeb} />
-                    <Text>Web Design</Text>
+                    <Icon as={FaRobot} />
+                    <Text>Machine Learning for Hybrid Computation</Text>
                   </HStack>
                 </Tab>
                 <Tab
@@ -119,10 +123,25 @@ const TechStack = ({ skills }) => {
                   }}
                   mr={2}
                   mt={2}
-                  onClick={() => filterSkills('ml')}>
+                  onClick={() => filterSkills('language')}>
                   <HStack spacing={1}>
-                    <Icon as={FaRobot} />
-                    <Text>Machine Learning</Text>
+                    <Icon as={BiCode} />
+                    <Text>Programming Languages</Text>
+                  </HStack>
+                </Tab>
+                <Tab
+                  bg={useColorModeValue('gray.100', 'gray.800')}
+                  color={useColorModeValue('gray.600', 'gray.500')}
+                  _selected={{
+                    color: 'red.800',
+                    bg: 'red.100'
+                  }}
+                  mr={2}
+                  mt={2}
+                  onClick={() => filterSkills('editor')}>
+                  <HStack spacing={1}>
+                    <Icon as={MdNote} />
+                    <Text>Editors</Text>
                   </HStack>
                 </Tab>
               </TabList>
