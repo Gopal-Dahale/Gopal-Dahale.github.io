@@ -112,7 +112,7 @@ const About = () => {
   const { colorMode } = useColorMode()
 
   return (
-    <PageLayout title="About" description="My educational and professional journey so far">
+    <PageLayout title="About" keywords="Google Summer of Code, Quantum Open Source Foundation, Qiskit" description="My educational and professional journey so far">
       <PageSlideFade>
         <StaggerChildren>
           <MotionBox>

@@ -11,7 +11,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             property="og:title"
-            content="Gopal Dahale - Full Stack Developer/ Machine Learning Developer"
+            content="Gopal Dahale - Quantum Computing and Machine Learning Researcher"
           />
           <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
           <link rel="icon" href="/favicon.ico" />

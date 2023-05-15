@@ -48,7 +48,7 @@ const TechStack = ({ skills }) => {
   }
 
   return (
-    <PageLayout title="Skills" keywords="rails, ruby, react, javascript, typescript">
+    <PageLayout title="Skills" keywords="Cirq, PennyLane, Qiskit, AWS Braket, Cuda, TensorFlow, JAX">
       <PageSlideFade>
         <VStack spacing={8}>
           <Section>
