@@ -23,7 +23,10 @@ const TURQUOISE = '#06b6d4'
 
 /* ------------------------ Container ------------------------ */
 const RepositoriesList = () => (
-  <PageLayout title="Research" keywords="QHack, Quantum Climate Challenge, QCNN, Quantum Open Source Foundtion, Kagome, Grover">
+  <PageLayout
+    title="Research"
+    keywords="QHack, Quantum Climate Challenge, QCNN, Quantum Open Source Foundtion, Kagome, Grover"
+  >
     <PageSlideFade>
       <VStack align="start" spacing={3}>
         <HStack justifyContent="space-between" width="100%">

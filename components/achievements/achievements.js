@@ -47,7 +47,8 @@ const Achievements = () => (
               url="https://summerofcode.withgoogle.com/programs/2023/projects/sRqbxQyq"
               text=" Google Summer of Code 23 with ML4SCI"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
 
           <TimelineItem icon={VscSourceControl}>
@@ -57,7 +58,8 @@ const Achievements = () => (
               url="https://qosf.org/"
               text=" Quantum Open Source Foundation Cohort 7"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
 
           <TimelineItem icon={GiMolecule}>
@@ -67,7 +69,8 @@ const Achievements = () => (
               url="https://app.ekipa.de/challenges/deloitte-quantum-23/brief"
               text=" Deloitte's Quantum Climate Challenge 23"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
 
           <TimelineItem icon={SiIbm}>
@@ -93,7 +96,7 @@ const Achievements = () => (
           </TimelineItem>
 
           <TimelineItem icon={BiCodeCurly}>
-           QHack Open Hackathon Winner in
+            QHack Open Hackathon Winner in
             <ExternalLink
               color="blue.200"
               url="https://drive.google.com/file/d/1RAAjDUDqbbrzIYPTJPdWUnUF0bOguV-g/view"
@@ -106,14 +109,15 @@ const Achievements = () => (
               url="https://drive.google.com/file/d/1w9YmwXNT9fjFBVrl6r3sGSsagatQL9bJ/view"
               text=" AWS Challenge"
               target="_blank"
-            />. Secured 21 rank of 793 in
-            
+            />
+            . Secured 21 rank of 793 in
             <ExternalLink
               color="blue.200"
               url="https://qhack.ai/"
               text=" Coding Challenges"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
 
           <TimelineItem icon={SiQiskit}>
@@ -151,7 +155,8 @@ const Achievements = () => (
               url="https://codecamp.xanadu.ai/"
               text=" PennyLane Code Camp"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={SiIbm}>
             Mentee in
@@ -160,7 +165,8 @@ const Achievements = () => (
               url="https://www.credly.com/badges/753352aa-64c2-4cde-a85c-a61f68dbb976/public_url"
               text=" Qiskit Advocate Mentorship Program Fall 22"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={SiIbm}>
             Advanced badge in
@@ -169,7 +175,8 @@ const Achievements = () => (
               url="https://www.credly.com/badges/97d76c09-1e5b-4446-8fd9-874f6c7e2d14/public_url"
               text=" IBM Quantum Challenge Fall 2022 Achievement"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={SiIbm}>
             Successfully completed
@@ -178,7 +185,8 @@ const Achievements = () => (
               url="https://www.credly.com/badges/5f68cecd-3cc4-4d01-8363-c9fa4b452331/public_url"
               text=" Qiskit Global Summer School 22"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={SiIbm}>
             Became
@@ -187,7 +195,8 @@ const Achievements = () => (
               url="https://www.credly.com/badges/b2426e47-db32-49ef-bd24-40cb51ff637f/public_url"
               text=" Qiskit Advocate"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={SiIbm}>
             <ExternalLink
@@ -195,7 +204,8 @@ const Achievements = () => (
               url="https://www.credly.com/badges/3ae61f77-2fd0-419b-863f-1d0cd070bf13/public_url"
               text=" IBM Certified Associate Developer - Quantum Computation using Qiskit v0.2X"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={SiIbm}>
             Earned the
@@ -214,7 +224,8 @@ const Achievements = () => (
               url="https://summerofcode.withgoogle.com/archive/2022/projects/0gbpQgKv"
               text=" Google Summer of Code 22 with ML4SCI"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
         </Box>
       </Box>
@@ -231,7 +242,8 @@ const Achievements = () => (
               url="https://www.codechef.com/users/gopald27"
               text=" CodeChef"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
         </Box>
       </Box>
@@ -247,7 +259,8 @@ const Achievements = () => (
               url="https://jovian.ai/dahalegopal27"
               text=" Jovian.ai"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={SiKotlin}>
             Participated in
@@ -276,7 +289,8 @@ const Achievements = () => (
               url="https://www.hackerrank.com/results/hack-the-interview-global/dahalegopal27"
               text=" Hack the Interview - Global"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={FaFreeCodeCamp}>
             Completed Responsive Web Design Developer Certification from
@@ -294,7 +308,8 @@ const Achievements = () => (
               url="https://www.hackerrank.com/dahalegopal27"
               text=" HackerRank"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
         </Box>
       </Box>
@@ -310,7 +325,8 @@ const Achievements = () => (
               url="https://www.hackerrank.com/dahalegopal27"
               text=" HackerRank"
               target="_blank"
-            />.
+            />
+            .
           </TimelineItem>
           <TimelineItem icon={SiQwiklabs} skipTrail>
             Attained
