@@ -42,7 +42,7 @@ const Home = () => (
         m="auto"
         mb={[16, 16, 'auto']}
       >
-        <Avatar size="2xl" src="assets/images/user_icon.png" />
+        <Avatar size="2xl" name="Gopal Ramesh Dahale" src="assets/images/user_icon.png" />
       </MotionBox>
       <MotionFlex
         ml={['auto', 'auto', 16]}
@@ -125,7 +125,7 @@ const Home = () => (
             <ListItem>
               <NextLink href="/open-source" passHref>
                 <Button _hover={{ color: 'teal' }} variant="link">
-                  Live/Local Github Repos
+                  Checkout my recent work
                   <Badge ml="1" colorScheme="green">
                     New
                   </Badge>
@@ -133,35 +133,18 @@ const Home = () => (
               </NextLink>
             </ListItem>
             <ListItem>
-              <NextLink href="/about" passHref>
-                <Button _hover={{ color: 'teal' }} variant="link">
-                  Work Experience
-                </Button>
-              </NextLink>
-            </ListItem>
-            <ListItem>
-              <NextLink
-                href="https://drive.google.com/file/d/1vfSivLbATuVK2lxbczEts8hRcBIrafWO/view?usp=sharing"
-                passHref
-              >
+              <NextLink href="Resume" passHref>
                 <Button _hover={{ color: 'teal' }} variant="link">
                   Resume
                 </Button>
               </NextLink>
             </ListItem>
             <ListItem>
-              <NextLink href="https://jovian.ai/dahalegopal27" passHref>
+              <NextLink href="https://dahalegopal27.medium.com" passHref>
                 <Button _hover={{ color: 'teal' }} variant="link">
-                  Jovian
+                  Read my latest blogs
                 </Button>
               </NextLink>
-              &nbsp;and&nbsp;
-              <NextLink href="https://www.kaggle.com/gopalrameshdahale" passHref>
-                <Button _hover={{ color: 'teal' }} variant="link">
-                  Kaggle
-                </Button>
-              </NextLink>
-              &nbsp;Profile
             </ListItem>
           </UnorderedList>
         </Stack>

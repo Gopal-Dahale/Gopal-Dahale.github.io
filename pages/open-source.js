@@ -32,7 +32,8 @@ const RepositoriesList = () => (
           </Header>
         </HStack>
         <Text color={useColorModeValue('gray.500', 'gray.200')} textAlign="left">
-          Here I bridge the gap between theory and practice by working on projects in Quantum Computing.
+          Here I bridge the gap between theory and practice by working on projects in Quantum
+          Computing.
         </Text>
       </VStack>
       <OfflineData repositories={currentRepositories} />
@@ -47,7 +48,7 @@ const RepositoriesList = () => (
                   </Header>
                 </HStack>
                 <Text color={useColorModeValue('gray.500', 'gray.200')} textAlign="left">
-                  Notable projects completed during my Bachelor's.
+                  Notable projects completed during my Bachelor&apos;s.
                 </Text>
               </VStack>
             </AccordionButton>
