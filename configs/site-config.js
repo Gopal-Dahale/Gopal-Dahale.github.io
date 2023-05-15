@@ -2,7 +2,7 @@
 import React from 'react'
 
 // Icons
-import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaMedium, FaStackOverflow, FaTwitter } from 'react-icons/fa'
 import { SiCodechef, SiHackerrank, SiLeetcode } from 'react-icons/si'
 import { FiMail } from 'react-icons/fi'
 
@@ -12,40 +12,52 @@ const siteConfig = {
     accounts: [
       {
         url: 'https://github.com/Gopal-Dahale/',
-        label: 'Github Account',
+        label: 'GitHub Account',
         type: 'gray',
         icon: <FaGithub />
       },
       {
-        url: 'https://www.linkedin.com/in/gopal-ramesh-dahale-7a3087198/',
+        url: 'https://www.linkedin.com/in/gopald27/',
         label: 'LinkedIn Account',
         type: 'linkedin',
         icon: <FaLinkedin />
       },
       {
-        url: 'https://stackoverflow.com/users/16026443/gopal-dahale?tab=profile',
+        url: 'https://twitter.com/gopald27',
+        label: 'Twitter Account',
+        type: 'blue',
+        icon: <FaTwitter />
+      },
+      {
+        url: 'https://dahalegopal27.medium.com/',
+        label: 'Medium Account',
+        type: 'gray',
+        icon: <FaMedium />
+      },
+      {
+        url: 'https://stackoverflow.com/users/16026443/gopal-dahale',
         label: 'Stackoverflow Account',
         type: 'orange',
         icon: <FaStackOverflow />
       },
-      {
-        url: 'https://www.codechef.com/users/gopald27',
-        label: 'Codechef Profile',
-        type: 'gray',
-        icon: <SiCodechef />
-      },
-      {
-        url: 'https://www.hackerrank.com/dahalegopal27',
-        label: 'Hackerrank Profile',
-        type: 'green',
-        icon: <SiHackerrank />
-      },
-      {
-        url: 'https://leetcode.com/dahalegopal27/',
-        label: 'LeetCode Profile',
-        type: 'orange',
-        icon: <SiLeetcode />
-      },
+      // {
+      //   url: 'https://www.codechef.com/users/gopald27',
+      //   label: 'Codechef Profile',
+      //   type: 'gray',
+      //   icon: <SiCodechef />
+      // },
+      // {
+      //   url: 'https://www.hackerrank.com/dahalegopal27',
+      //   label: 'Hackerrank Profile',
+      //   type: 'green',
+      //   icon: <SiHackerrank />
+      // },
+      // {
+      //   url: 'https://leetcode.com/dahalegopal27/',
+      //   label: 'LeetCode Profile',
+      //   type: 'orange',
+      //   icon: <SiLeetcode />
+      // },
       {
         url: 'mailto:dahalegopal27@gmail.com',
         label: 'Gopal Dahale',

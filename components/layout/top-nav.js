@@ -25,7 +25,7 @@ import ColorModeSwitcher from '../ui/ColorModeSwitcher'
 const webLinks = [
   { name: 'About', path: '/about' },
   { name: 'Tech Stack', path: '/tech-stack' },
-  { name: 'Projects', path: '/open-source' },
+  { name: 'Research', path: '/open-source' },
   { name: 'Achievements', path: '/achievements' }
 ]
 
@@ -88,7 +88,7 @@ export default function TopNav() {
           <HStack spacing={8} alignItems="center">
             <Box>
               <NextLink href="/" passHref>
-                <Avatar as={Link} size="sm" src="assets/images/user_icon.png" />
+                <Avatar as={Link} size="sm" name='Gopal Ramesh Dahale' src="assets/images/user_icon.png" />
               </NextLink>
             </Box>
             <HStack as="nav" spacing={4} display={{ base: 'none', md: 'flex' }}>
