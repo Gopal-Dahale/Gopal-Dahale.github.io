@@ -1,14 +1,14 @@
 const currentRepositories = [
   {
     title: 'Measurement based ITE',
-    cover: 'assets/images/repositories/osp23.png',
+    cover: 'assets/images/repositories/mbite.jpg',
     technologies: ['NumPy', 'ITE'],
     url: '',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
     title: 'Heisenberg model on Kagome lattice',
-    cover: 'assets/images/repositories/osp23.png',
+    cover: 'assets/images/repositories/osp23.jpg',
     technologies: ['Qiskit', 'VQE'],
     url: 'https://github.com/Gopal-Dahale/heisenberg-xxx-osp-22',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
@@ -36,7 +36,7 @@ const currentRepositories = [
   },
   {
     title: 'QCNNs for HEP Analysis at the LHC',
-    cover: 'assets/images/repositories/gsoc22.png',
+    cover: 'assets/images/repositories/gsoc22.jpg',
     technologies: ['Cirq', 'TFQ', 'PennyLane', 'JAX'],
     url: '',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
