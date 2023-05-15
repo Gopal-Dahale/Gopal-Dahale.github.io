@@ -62,7 +62,7 @@ const TechStack = ({ skills }) => {
                 maxW="lg"
                 textAlign="center"
               >
-                This is a list of my favourite tools and technologies that I use frequently.
+                Powering research with the latest tools and technologies.
               </Text>
             </VStack>
           </Section>
