@@ -3,7 +3,7 @@ const currentRepositories = [
     title: 'Measurement based ITE',
     cover: 'assets/images/repositories/mbite.jpg',
     technologies: ['NumPy', 'ITE'],
-    url: '',
+    url: 'https://github.com/Gopal-Dahale/measurement-based-ite',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
@@ -17,14 +17,14 @@ const currentRepositories = [
     title: 'Qlimate',
     cover: 'assets/images/repositories/qlimate.png',
     technologies: ['Qiskit', 'PennyLane', 'VQE', 'DMET'],
-    url: '',
+    url: 'https://github.com/Gopal-Dahale/qlimate',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
     title: 'Data re-uploading with QSVM',
     cover: 'assets/images/repositories/qsvm.png',
     technologies: ['PennyLane', 'JAX'],
-    url: '',
+    url: 'https://github.com/Gopal-Dahale/qosf-screening-tasks-cohort-7',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
@@ -38,7 +38,7 @@ const currentRepositories = [
     title: 'QCNNs for HEP Analysis at the LHC',
     cover: 'assets/images/repositories/gsoc22.jpg',
     technologies: ['Cirq', 'TFQ', 'PennyLane', 'JAX'],
-    url: '',
+    url: 'https://github.com/Gopal-Dahale/Molecular-Energy-Landscapes-of-HEA-for-Carbon-Capture',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   }
 ]
