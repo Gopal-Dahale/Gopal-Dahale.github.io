@@ -133,7 +133,7 @@ const Home = () => (
               </NextLink>
             </ListItem>
             <ListItem>
-              <NextLink href="Resume" passHref>
+              <NextLink href="/Resume" passHref>
                 <Button _hover={{ color: 'teal' }} variant="link">
                   Resume
                 </Button>
