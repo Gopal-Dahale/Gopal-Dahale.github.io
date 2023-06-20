@@ -2,14 +2,14 @@ const currentRepositories = [
   {
     title: 'Measurement based ITE',
     cover: 'assets/images/repositories/mbite.jpg',
-    technologies: ['NumPy', 'ITE'],
+    technologies: ['Quantum', 'NumPy', 'ITE'],
     url: 'https://github.com/Gopal-Dahale/measurement-based-ite',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
     title: 'Heisenberg model on Kagome lattice',
     cover: 'assets/images/repositories/osp23.jpg',
-    technologies: ['Qiskit', 'VQE'],
+    technologies: ['Qiskit', 'VQE', 'Noise Mitigation'],
     url: 'https://github.com/Gopal-Dahale/heisenberg-xxx-osp-22',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
@@ -30,15 +30,15 @@ const currentRepositories = [
   {
     title: 'Molecular Energy Landscapes of HEA for Carbon Capture',
     cover: 'assets/images/repositories/qhack23.png',
-    technologies: ['Qiskit', 'PennyLane', 'VQE'],
-    url: '',
+    technologies: ['Qiskit', 'PennyLane', 'VQE', 'AWS'],
+    url: 'https://github.com/Gopal-Dahale/Molecular-Energy-Landscapes-of-HEA-for-Carbon-Capture',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   },
   {
     title: 'QCNNs for HEP Analysis at the LHC',
     cover: 'assets/images/repositories/gsoc22.jpg',
     technologies: ['Cirq', 'TFQ', 'PennyLane', 'JAX'],
-    url: 'https://github.com/Gopal-Dahale/Molecular-Energy-Landscapes-of-HEA-for-Carbon-Capture',
+    url: 'https://github.com/Gopal-Dahale/qml-hep-lhc',
     blurHash: 'L25#he^nryxc^-w$V{V_56bqx[M{'
   }
 ]
