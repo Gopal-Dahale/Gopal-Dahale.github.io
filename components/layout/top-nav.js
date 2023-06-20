@@ -7,15 +7,17 @@ import {
   HStack,
   Link,
   IconButton,
+  Icon,
   useDisclosure,
   useColorModeValue,
+  Text,
   Stack
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import PropTypes from 'prop-types'
 
 // Icons
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiAtom, GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 
 // Custom Components
@@ -26,7 +28,8 @@ const webLinks = [
   { name: 'About', path: '/about' },
   { name: 'Tech Stack', path: '/tech-stack' },
   { name: 'Research', path: '/open-source' },
-  { name: 'Achievements', path: '/achievements' }
+  { name: 'Achievements', path: '/achievements' },
+  { name: 'ILearnQuantum', path: '/ILearnQuantum' }
 ]
 
 const NavLink = (props) => {
@@ -49,8 +52,16 @@ const NavLink = (props) => {
           color: link.color
         }}
         onClick={() => onClose()}
+        target={name === 'ILearnQuantum' ? '_blank' : '_self'}
       >
-        {name}
+        {name === 'ILearnQuantum' ? (
+          <HStack>
+            <Text>{name}</Text>
+            <Icon as={GiAtom} size={18} color={link.color} />
+          </HStack>
+        ) : (
+          name
+        )}
       </Link>
     </NextLink>
   )
