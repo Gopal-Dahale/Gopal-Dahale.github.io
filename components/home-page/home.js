@@ -7,12 +7,14 @@ import {
   Text,
   Badge,
   Stack,
+  Link,
   Button,
   UnorderedList,
   ListItem,
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { HiOutlineExternalLink } from 'react-icons/hi'
 
 // Custom Components
 import { MotionBox, MotionFlex } from '../ui/motion'
@@ -134,16 +136,28 @@ const Home = () => (
             </ListItem>
             <ListItem>
               <NextLink href="/Resume" passHref>
-                <Button _hover={{ color: 'teal' }} variant="link">
-                  Resume
-                </Button>
+                <Link isExternal>
+                  <Button
+                    _hover={{ color: 'teal' }}
+                    rightIcon={<HiOutlineExternalLink />}
+                    variant="link"
+                  >
+                    Resume
+                  </Button>
+                </Link>
               </NextLink>
             </ListItem>
             <ListItem>
-              <NextLink href="https://dahalegopal27.medium.com" passHref>
-                <Button _hover={{ color: 'teal' }} variant="link">
-                  Read my latest blogs
-                </Button>
+              <NextLink href="/ILearnQuantum" target="_blank" passHref>
+                <Link isExternal>
+                  <Button
+                    _hover={{ color: 'teal' }}
+                    rightIcon={<HiOutlineExternalLink />}
+                    variant="link"
+                  >
+                    Read my latest blogs
+                  </Button>
+                </Link>
               </NextLink>
             </ListItem>
           </UnorderedList>
