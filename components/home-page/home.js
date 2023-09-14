@@ -76,7 +76,7 @@ const Home = () => (
             Gopal,&nbsp;
           </Box>
           <Box as="div">
-            a passionate Quantum Machine Learning enthusiast with extensive experience in related
+            a passionate Quantum Computing and Machine Learning enthusiast with extensive experience in related
             research areas 🚀.{' '}
           </Box>
           <Box as="div">

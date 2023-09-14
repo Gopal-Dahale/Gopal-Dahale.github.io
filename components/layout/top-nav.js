@@ -103,7 +103,7 @@ export default function TopNav() {
                   as={Link}
                   size="sm"
                   name="Gopal Ramesh Dahale"
-                  src="assets/images/user_icon.png"
+                  src="assets/images/user_icon.png  "
                 />
               </NextLink>
             </Box>

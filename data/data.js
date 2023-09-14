@@ -13,7 +13,7 @@ export const companies = [
     alt: 'QOSF logo',
     role: 'Open Source Contributor/Mentee',
     skills: ['Qiskit', 'PennyLane (Catalyst)', 'CUDA Quantum', 'Numpy', 'Scipy'],
-    period: 'March 2023 - Present',
+    period: 'March 2023 - July 2023',
     logo: 'assets/images/logos/qosf.jpeg',
     link: 'https://qosf.org/'
   },
@@ -126,32 +126,18 @@ export const institutes = [
 
 export const skillsArray = [
   {
-    name: 'Cirq',
-    description: 'Quantum computing framework',
-    link: 'https://quantumai.google/cirq',
-    type: 'quantum',
-    image: 'assets/images/skills/cirq.svg'
-  },
-  {
-    name: 'Qiskit',
-    description: 'Quantum computing SDK',
-    link: 'https://qiskit.org/',
-    type: 'quantum',
-    image: 'assets/images/skills/qiskit.svg'
-  },
-  {
-    name: 'PennyLane',
-    description: 'Differentiable quantum programming',
-    link: 'https://pennylane.ai/',
-    type: 'quantum',
-    image: 'assets/images/skills/pennylane.svg'
-  },
-  {
     name: 'AWS Braket',
     description: 'AWS quantum computing service',
     link: 'https://aws.amazon.com/braket/',
     type: 'quantum',
     image: 'assets/images/skills/aws-braket.png'
+  },
+  {
+    name: 'Cirq',
+    description: 'Quantum computing framework',
+    link: 'https://quantumai.google/cirq',
+    type: 'quantum',
+    image: 'assets/images/skills/cirq.svg'
   },
   {
     name: 'Cuda-Quantum',
@@ -161,6 +147,34 @@ export const skillsArray = [
     image: 'assets/images/skills/cuda-quantum.svg'
   },
   {
+    name: 'PennyLane',
+    description: 'Differentiable quantum programming',
+    link: 'https://pennylane.ai/',
+    type: 'quantum',
+    image: 'assets/images/skills/pennylane.svg'
+  },
+  {
+    name: 'Qiskit',
+    description: 'Quantum computing SDK',
+    link: 'https://qiskit.org/',
+    type: 'quantum',
+    image: 'assets/images/skills/qiskit.svg'
+  },
+  {
+    name: 'Qulacs',
+    description: 'Fast quantum circuit simulator',
+    link: 'https://docs.qulacs.org/en/latest/index.html',
+    type: 'quantum',
+    image: 'assets/images/skills/qulacs.png'
+  },
+  {
+    name: 'TensorCircuit',
+    description: 'High-performance quantum computing software framework',
+    link: 'https://tensorcircuit.readthedocs.io/en/latest/',
+    type: 'quantum',
+    image: 'assets/images/skills/tc.jpg'
+  },
+  {
     name: 'TensorFlow Quantum',
     description: 'QML with TensorFlow',
     link: 'https://www.tensorflow.org/quantum',
@@ -168,11 +182,25 @@ export const skillsArray = [
     image: 'assets/images/skills/tfq.svg'
   },
   {
-    name: 'TensorFlow',
-    description: 'ML framework',
-    link: 'https://www.tensorflow.org/',
+    name: 'Flax',
+    description: 'JAX based Neural network library',
+    link: 'https://flax.readthedocs.io/en/latest/index.html',
     type: 'ml',
-    image: 'assets/images/skills/tensorflow.svg'
+    image: 'assets/images/skills/flax.png'
+  },
+  {
+    name: 'JAX',
+    description: 'High-performance ML research',
+    link: 'https://jax.readthedocs.io/en/latest/index.html',
+    type: 'ml',
+    image: 'assets/images/skills/jax.svg'
+  },
+   {
+    name: 'Jraph',
+    description: 'Graph Neural Networks in JAX',
+    link: 'https://github.com/deepmind/jraph',
+    type: 'ml',
+    image: 'assets/images/skills/jraph.png'
   },
   {
     name: 'PyTorch',
@@ -189,25 +217,11 @@ export const skillsArray = [
     image: 'assets/images/skills/scikit.png'
   },
   {
-    name: 'JAX',
-    description: 'High-performance ML research',
-    link: 'https://jax.readthedocs.io/en/latest/index.html',
+    name: 'TensorFlow',
+    description: 'ML framework',
+    link: 'https://www.tensorflow.org/',
     type: 'ml',
-    image: 'assets/images/skills/jax.svg'
-  },
-  {
-    name: 'Flax',
-    description: 'JAX based Neural network library',
-    link: 'https://flax.readthedocs.io/en/latest/index.html',
-    type: 'ml',
-    image: 'assets/images/skills/flax.png'
-  },
-  {
-    name: 'Jraph',
-    description: 'Graph Neural Networks in JAX',
-    link: 'https://github.com/deepmind/jraph',
-    type: 'ml',
-    image: 'assets/images/skills/jraph.png'
+    image: 'assets/images/skills/tensorflow.svg'
   },
   {
     name: 'C++',
@@ -224,20 +238,19 @@ export const skillsArray = [
     image: 'assets/images/skills/python.svg'
   },
   {
-    name: 'VSCode',
-    description: 'Code editor',
-    link: 'https://code.visualstudio.com/',
-    type: 'editor',
-    image: 'assets/images/skills/vscode.svg'
-  },
-  {
     name: 'Jupyter Notebook',
     description: 'Web-based interactive notebook',
     link: 'https://jupyter.org/',
     type: 'editor',
     image: 'assets/images/skills/jupyter.svg'
+  },
+  {
+    name: 'VSCode',
+    description: 'Code editor',
+    link: 'https://code.visualstudio.com/',
+    type: 'editor',
+    image: 'assets/images/skills/vscode.svg'
   }
-
   // {
   //   name: 'Javascript',
   //   description: 'Web development',
