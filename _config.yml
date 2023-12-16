@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "⟨Gopal|Homepage⟩"
+title                    : "Gopal's Homepage"
 title_separator          : "-"
 name                     : &name "Gopal Ramesh Dahale"
 description              : &description "personal description"
