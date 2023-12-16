@@ -5,11 +5,10 @@ permalink: /publication/2023-11-30-comparison-qgnn
 excerpt: ''
 date: 2023-11-30
 venue: 'arxiv'
-paperurl: 'https://arxiv.org/abs/2311.18672'
 citation: 'Forestano RT, Cara MC, <b>Dahale GR</b>, Dong Z, Gleyzer S, Justice D, Kong K, Magorsch T, Matchev KT, Matcheva K, Unlu EB. A Comparison Between Invariant and Equivariant Classical and Quantum Graph Neural Networks. arXiv preprint arXiv:2311.18672. 2023 Nov 30.'
 ---
 
-<!-- [[Paper]](https://arxiv.org/abs/2311.18672) -->
+[[Paper]](https://arxiv.org/abs/2311.18672)
 
 ## Abstract
 

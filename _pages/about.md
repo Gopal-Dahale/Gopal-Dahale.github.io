@@ -20,7 +20,11 @@ redirect_from:
 
 ## 👨🏻‍🔬 Experience
 
-Currently I am working as a Research Software Engineer at Qkrishi, a quantum finance focused startup, where I am tackling problems like portfolio optimization and fraud detection. Additionally, I have participated in Google Summer of Code with ML4SCI in 2022 and 2023. There I worked on quantum neural networks for HEP data classification.
+Currently, I am working as a Research Software Engineer at Qkrishi, a quantum finance-focused startup, where I am tackling problems like portfolio optimization and fraud detection.
+
+Additionally, I have participated in Google Summer of Code with ML4SCI in 2022 and 2023. There I worked on quantum neural networks for HEP data classification.
+
+I am also a Qiskit Advocate and studied tensor network quantum circuits during the Qiskit Advocate Mentorship Program in Fall 2022. In the past, I participated in many IBM Quantum challenges; these [badges](https://www.credly.com/users/gopal-ramesh-dahale/badges) highlight the journey.
 
 ## 📚 Teaching and Community Contributions
 

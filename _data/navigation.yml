@@ -9,8 +9,5 @@ main:
   - title: "Projects"
     url: /projects/
 
-  # - title: "Achievements"
-  #   url: /achievements/
-
-  # - title: "ILearnQuantum ⚛️"
-  #   url: /ILearnQuantum/
+  - title: "ILearnQuantum ⚛️"
+    url: /ILearnQuantum/
