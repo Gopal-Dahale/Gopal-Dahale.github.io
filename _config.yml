@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Gopal's Homepage"
 title_separator          : "-"
 name                     : &name "Gopal Ramesh Dahale"
-description              : &description "personal description"
+description              : &description "I'm Gopal Dahale, a Quantum Researcher and Software Engineer specializing in quantum computing and its applications. With a strong foundation from the Indian Institute of Technology, Bhilai, I've contributed to quantum open source projects and won hackathons, showcasing expertise in quantum computing concepts and frameworks. Passionate about pushing technology boundaries, I'm dedicated to advancing quantum computing and mentoring future talents in the field."
 url                      : https://gopal-dahale.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Gopal-Dahale/Gopal-Dahale.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Gopal Ramesh Dahale"
   avatar           : "profile2.png"
-  bio              : "Quantum Computing"
+  bio              : "Quantum Computing Researcher"
   location         : "Navi Mumbai, India"
   employer         :
   pubmed           :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : # "replacethistwitterhandle"
+  twitter          : "gopald27"
   vine             :
   weibo            :
   xing             :
