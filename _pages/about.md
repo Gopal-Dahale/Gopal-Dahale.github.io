@@ -14,9 +14,14 @@ redirect_from:
 
 🔬 My research interests include in quantum computing and its applications in machine learning, chemistry and combinatorial optimization.
 
-📚 I’m currently exploring hybrid algorithms for neutral-atom quantum hardware.
+📚 I’m currently exploring hybrid algorithms for combinatorial optimization problems.
 
 📽️ I am also happy to assist anyone on their journey in quantum computing.
+
+📰 News
+
+- Released Qiskit-Qulacs [v0.1.0](https://github.com/Gopal-Dahale/qiskit-qulacs/releases/tag/v0.1.0). [Apr 2, 2024]
+- Won QHack 2024. Read [highlights](https://pennylane.ai/blog/2024/03/qhack-2024-highlights/). [Mar 6, 2024]
 
 ## 👨🏻‍🔬 Experience
 
@@ -28,5 +33,5 @@ I am also a Qiskit Advocate and studied tensor network quantum circuits during t
 
 ## 📚 Teaching and Community Contributions
 
-To further contribute to the quantum computing community, I have a [Medium](https://medium.com/@dahalegopal27) channel where I publish educational Quantum Computing content. I frequently publish blog posts on [ILearnQuantum](https://gopal-dahale.github.io/ILearnQuantum/) with a 0.1 probability.
+To further contribute to the quantum computing community, I have a [Medium](https://medium.com/@dahalegopal27) channel where I publish educational Quantum Computing content. I frequently publish blog posts on [ILearnQuantum](https://gopal-dahale.github.io/ILearnQuantum/) with a 0.1 probability 😅.
 
