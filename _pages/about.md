@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Hello there, I'm Gopal 👋"
-excerpt: "About me"
+excerpt: "I'm Gopal Dahale, Researcher and Software Engineer specializing in quantum computing and its applications. With a strong foundation from the Indian Institute of Technology, Bhilai, I've contributed to quantum open-source projects and won hackathons, showcasing expertise in quantum computing concepts and frameworks. Passionate about pushing technology boundaries, I'm dedicated to advancing quantum computing and mentoring future talents in the field."
 author_profile: true
 redirect_from:
   - /about/

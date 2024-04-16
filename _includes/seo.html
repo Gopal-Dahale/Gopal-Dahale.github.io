@@ -119,7 +119,9 @@
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name" : "{{ site.social.name | default: site.name }}",
       "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      "sameAs" : {{ site.social.links | jsonify }},
+      "image": "{{ site.author.avatar }}",
+      "description": "{{ site.description }}"
     }
   </script>
 {% endif %}
