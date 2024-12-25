@@ -10,7 +10,7 @@ redirect_from:
 
 ![A gate-based quantum computer](/images/qc.png){: .align-right width="200px"}
 
-👨🏻‍💻 I’m a Research Software Engineer at Qkrishi.
+👨🏻‍💻 I’m a Master's student in Quantum Science and Engineering at EPFL specializing in Quantum Information and Computation.
 
 🔬 My research interests include in quantum computing and its applications in machine learning, chemistry and combinatorial optimization.
 
@@ -20,14 +20,15 @@ redirect_from:
 
 📰 News
 
+- Joined EPFL for Master's in Quantum Science and Engineering. [Sep 2024]
 - Released Qiskit-Qulacs [v0.1.0](https://github.com/Gopal-Dahale/qiskit-qulacs/releases/tag/v0.1.0). [Apr 2, 2024]
 - Won QHack 2024. Read [highlights](https://pennylane.ai/blog/2024/03/qhack-2024-highlights/). [Mar 6, 2024]
 
 ## 👨🏻‍🔬 Experience
 
-Currently, working as a Research Software Engineer at Qkrishi, a quantum finance-focused startup. I tackle problems like portfolio optimization and fraud detection.
+Previously, I was a Research Software Engineer at Qkrishi, a quantum finance-focused startup. I tackled problems like portfolio optimization and fraud detection.
 
-In 2022 and 2023, I participated in Google Summer of Code with ML4SCI. There I worked on quantum neural networks for HEP data classification.
+In 2022 and 2023, I participated in Google Summer of Code with ML4SCI. There I worked on quantum neural networks for HEP data classification. I was served as a mentor in the same organization in 2024. Here is the list of all [projects](https://summerofcode.withgoogle.com/archive/2024/organizations/machine-learning-for-science-ml4sci#projects-list).
 
 I am also a Qiskit Advocate and studied tensor network quantum circuits during the Qiskit Advocate Mentorship Program in Fall 2022. In the past, I participated in IBM Quantum challenges; these [badges](https://www.credly.com/users/gopal-ramesh-dahale/badges) highlight the journey.
 
