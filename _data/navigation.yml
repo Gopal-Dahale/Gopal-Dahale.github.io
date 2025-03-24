@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "CV"
-    url: /files/CV_Gopal_Ramesh_Dahale.pdf
+  # - title: "CV"
+  #   url: /files/CV_Gopal_Ramesh_Dahale.pdf
 
   - title: "Publications"
     url: /publications/
